@@ -1,4 +1,4 @@
-class LuxDelux < Cask
+class Luxdelux < Cask
   url 'http://sillysoft.net/download/LuxDelux.app.zip'
   homepage 'http://sillysoft.net/lux/'
   version '6.2'
