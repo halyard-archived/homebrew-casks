@@ -5,8 +5,11 @@ class VirtualboxExtPack < Cask
   url "http://download.virtualbox.org/virtualbox/#{version.gsub(/-.*/, '')}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
   homepage 'http://www.virtualbox.org'
 
-  depends_on_formula 'akerl/casks/virtualbox'
+  before_install do
+    system 'brew', 'cask', 'install', 'halyard/casks/virtualbox'
+  end
   after_install do
+
     system(
       '/usr/bin/VBoxManager', 'extpack', 'install', '--replace',
       "Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
