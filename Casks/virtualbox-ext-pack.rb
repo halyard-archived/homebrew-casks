@@ -1,6 +1,6 @@
 class VirtualboxExtPack < Cask
   version '4.3.14-95030'
-  sha256 'c89b22f3e5ba5d93ccf762c5922c1f21d2c4e7c21b9487d892ac0516d6f4d55a'
+  sha256 'b965c3565e7933bc61019d2992f4da084944cfd9e809fbeaff330f4743d47537'
 
   url "http://download.virtualbox.org/virtualbox/#{version.gsub(/-.*/, '')}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
   homepage 'http://www.virtualbox.org'
