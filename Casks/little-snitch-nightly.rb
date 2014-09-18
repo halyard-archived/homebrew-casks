@@ -1,6 +1,6 @@
 class LittleSnitchNightly < Cask
-  version '3.4-nightly-(4208)'
-  sha256 'e3b91297945dcaaf7707f8f81301635012d56ea5342d817e21239d9b3f0945e7'
+  version '3.4-nightly-(4210)'
+  sha256 '7da5da2376b7f5eeb958a52426069a44f325f69809d223c9dfa61fba2e8a5d50'
 
   url "http://www.obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version}.dmg"
   homepage 'http://www.obdev.at/products/littlesnitch/index.html'
