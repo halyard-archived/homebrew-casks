@@ -1,6 +1,6 @@
 class Bartender < Cask
-  version '1.2.21'
-  sha256 '8fc631996bd6c52a623fafbc2821871e28f216f1d5f4179c8061df0f9afbb009'
+  version '1.2.24'
+  sha256 '67968df7a79f1e58b6ca661646513821e52dacfb8517f17ec9984c49d539caef'
 
   url "http://www.macbartender.com/updates/#{version.gsub '.', '-'}/Bartender.zip"
   homepage 'http://www.macbartender.com/'
