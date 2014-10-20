@@ -1,8 +1,8 @@
 class LittleSnitchNightlyHalyard < Cask
-  version '3.4.1'
-  sha256 '4af1bcb47e580c6aa692ce3635648d6679e48dec5ae683dc74dd968bef9cf27b'
+  version '3.5-nightly-(4222)'
+  sha256 'ebac10e6a526aa44f6aaa5f903f0e9e06a5c3bb483a178519ac0625bf7a303f7'
 
-  url "http://www.obdev.at/ftp/pub/Products/littlesnitch/LittleSnitch-3.4.dmg"
+  url "http://www.obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version}.dmg"
   homepage 'http://www.obdev.at/products/littlesnitch/index.html'
 
   caveats do
