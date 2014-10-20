@@ -1,4 +1,4 @@
-class GoogleChromeDev < Cask
+class GoogleChromeDevHalyard < Cask
   version 'latest'
   sha256 :no_check
 

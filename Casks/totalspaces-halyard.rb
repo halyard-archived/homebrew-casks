@@ -1,4 +1,4 @@
-class Totalspaces < Cask
+class TotalspacesHalyard < Cask
   version '2.2.9'
   sha256 '66656dab328455906fd6e757bd966efac7d3a364b66155c847de55bfc57d8f14'
 

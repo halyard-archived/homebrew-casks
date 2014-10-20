@@ -1,4 +1,4 @@
-class Virtualbox < Cask
+class VirtualboxHalyard < Cask
   version '4.3.16-95972'
   sha256 '09bd6b352a425f199344092482ee0a72f398f784138810ef17b88d2aa30ad0c6'
 

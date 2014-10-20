@@ -1,4 +1,4 @@
-class Copy < Cask
+class CopyHalyard < Cask
   version 'latest'
   sha256 :no_check
 

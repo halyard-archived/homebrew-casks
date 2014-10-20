@@ -1,4 +1,4 @@
-class Osxfuse < Cask
+class OsxfuseHalyard < Cask
   version '2.7.1'
   sha256 'fa7819c3d20c207ac51f25d3db2e0705dde52e8cf91e42e9aead83aa4fadf375'
 

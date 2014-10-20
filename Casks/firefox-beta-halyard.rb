@@ -1,4 +1,4 @@
-class FirefoxBeta < Cask
+class FirefoxBetaHalyard < Cask
   version '33.0b4'
   sha256 '512c9d23e6d03be2b83c53c8f6f8afda765ac8218697c3724ab66a417dd98993'
 

@@ -1,4 +1,4 @@
-class ThunderbirdBeta < Cask
+class ThunderbirdBetaHalyard < Cask
   version '32.0b1'
   sha256 '0f66e9cb452293e248d92c9a156c0b81c50e81ba1107922ab6f8b555934e83d3'
 

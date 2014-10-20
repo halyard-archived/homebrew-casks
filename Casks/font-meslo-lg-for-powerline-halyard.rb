@@ -1,4 +1,4 @@
-class FontMesloLgForPowerline < Cask
+class FontMesloLgForPowerlineHalyard < Cask
   version 'latest'
   sha256 :no_check
 

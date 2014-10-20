@@ -1,4 +1,4 @@
-class VirtualboxExtPack < Cask
+class VirtualboxExtPackHalyard < Cask
   version '4.3.14-95030'
   sha256 'b965c3565e7933bc61019d2992f4da084944cfd9e809fbeaff330f4743d47537'
 

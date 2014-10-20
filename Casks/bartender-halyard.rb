@@ -1,4 +1,4 @@
-class Bartender < Cask
+class BartenderHalyard < Cask
   version '1.2.24'
   sha256 '67968df7a79f1e58b6ca661646513821e52dacfb8517f17ec9984c49d539caef'
 

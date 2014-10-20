@@ -1,4 +1,4 @@
-class LittleSnitchNightly < Cask
+class LittleSnitchNightlyHalyard < Cask
   version '3.4.1'
   sha256 '4af1bcb47e580c6aa692ce3635648d6679e48dec5ae683dc74dd968bef9cf27b'
 

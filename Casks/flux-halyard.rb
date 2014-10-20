@@ -1,4 +1,4 @@
-class Flux < Cask
+class FluxHalyard < Cask
   version '30'
   sha256 '7c201bfe37cc3e670a200a60a72caf298036a6335b237bf04e17efdd9ff879ab'
 

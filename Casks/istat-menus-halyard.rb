@@ -1,4 +1,4 @@
-class IstatMenus < Cask
+class IstatMenusHalyard < Cask
   version '5.0'
   sha256 'eecd18c166c47fa4f835e773ba9260fc6943a2ae0e743f42802c0b51e62b932b'
 

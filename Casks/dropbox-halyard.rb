@@ -1,4 +1,4 @@
-class Dropbox < Cask
+class DropboxHalyard < Cask
   version 'latest'
   sha256 :no_check
 

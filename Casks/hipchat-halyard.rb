@@ -1,4 +1,4 @@
-class Hipchat < Cask
+class HipchatHalyard < Cask
   version '3.0.9-135'
   sha256 'd6b19022f16ba34737d1cc90860fad8aece97ebb4268913b075b20258901a3aa'
 

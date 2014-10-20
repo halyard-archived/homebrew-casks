@@ -1,4 +1,4 @@
-class AirmailBeta < Cask
+class AirmailBetaHalyard < Cask
   version '2.0-270'
   sha256 '36117b0d4a29c8faa5e233ea1ac64ad37f5ece776f029796948b4616cf8a91c8'
 
