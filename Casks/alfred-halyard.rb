@@ -1,6 +1,6 @@
 class AlfredHalyard < Cask
-  version '2.5_299'
-  sha256 '4654da77e195342285b57253d1177f94e68adb8be8d7b10bd05d26353f75ecf6'
+  version '2.5.1_306'
+  sha256 'df675633df8ba80ac30153cd0a78c6838e3ab409e94a502f6d05ae10ad02420a'
 
   url "http://cachefly.alfredapp.com/Alfred_#{version}.zip"
   homepage 'http://www.alfredapp.com/'
