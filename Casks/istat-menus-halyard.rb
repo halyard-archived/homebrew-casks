@@ -1,6 +1,6 @@
 class IstatMenusHalyard < Cask
-  version '5.02'
-  sha256 'ceb90b123baea84dd788a251dab40f9ff97e077a8a7b150a2b2d5b2c9f779846'
+  version '5.03'
+  sha256 'd1292ec4b5415d43587d201af9fb056da937d75d3071584a74d83a3751d57538'
 
   url "https://s3.amazonaws.com/bjango/files/istatmenus5/istatmenus#{version}.zip"
   homepage 'http://bjango.com/mac/istatmenus/'
