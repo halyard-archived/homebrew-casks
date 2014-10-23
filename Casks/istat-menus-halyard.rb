@@ -6,4 +6,16 @@ class IstatMenusHalyard < Cask
   homepage 'http://bjango.com/mac/istatmenus/'
 
   link 'iStat Menus.app'
+
+  after_install do
+    # Don't ask to move the app bundle to /Applications
+    system(
+      '/usr/bin/defaults',
+      'write',
+      'com.bjango.istatmenus',
+      'suppressMoveToApplications',
+      '-bool',
+      'true'
+    )
+  end
 end
