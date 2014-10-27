@@ -1,6 +1,6 @@
 class FluxHalyard < Cask
-  version '30'
-  sha256 '7c201bfe37cc3e670a200a60a72caf298036a6335b237bf04e17efdd9ff879ab'
+  version '34'
+  sha256 'ba224837556d5cd57eac29e8ecbda68af8a577ad42b0f44a052439a83986d53f'
 
   url "https://justgetflux.com/mac/Flux#{version}.zip"
   homepage 'http://justgetflux.com'
