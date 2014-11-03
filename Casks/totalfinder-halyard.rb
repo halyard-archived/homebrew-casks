@@ -1,6 +1,6 @@
 class TotalfinderHalyard < Cask
-  version '1.6.13'
-  sha256 '183cbeaf554da00c924111b634d15e23249fdbdbe5541e7d2171967711f5d0df'
+  version '1.6.14'
+  sha256 '29c47d2cd86173ac7d7e7bbdd9d0f835ed62877a3cd25eaf3c8e5058e24d4073'
 
   url "http://downloads.binaryage.com/TotalFinder-#{version}.dmg"
   homepage 'http://totalfinder.binaryage.com'
