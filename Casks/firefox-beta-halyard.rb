@@ -1,6 +1,6 @@
 class FirefoxBetaHalyard < Cask
-  version '33.0b4'
-  sha256 '512c9d23e6d03be2b83c53c8f6f8afda765ac8218697c3724ab66a417dd98993'
+  version '34.0b8'
+  sha256 '1f2aee9ca09b75c56a00c7d6ac21124572a1fdc46564a35eda758068d44727ef'
 
   url "https://download.mozilla.org/?product=firefox-#{version}-SSL&os=osx&lang=en-US"
   homepage 'https://www.mozilla.org/en-US/firefox/beta/'
