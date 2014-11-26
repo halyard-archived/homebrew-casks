@@ -1,6 +1,6 @@
 class HipchatHalyard < Cask
-  version '3.0.13-139'
-  sha256 '104df0637f59d33baec3d331f255c30fbdebce90d540de8e8110e551d7a6c7a8'
+  version '3.1-145'
+  sha256 '5146c75a97b16e0a568237378290c0c85272b946bbf4478610ee240803bd32d6'
 
   url "http://downloads.hipchat.com.s3.amazonaws.com/osx/HipChat-#{version}.zip"
   appcast 'https://www.hipchat.com/release_notes/appcast/mac'
