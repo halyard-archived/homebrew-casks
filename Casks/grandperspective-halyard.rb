@@ -5,5 +5,5 @@ class GrandperspectiveHalyard < Cask
   url "https://downloads.sourceforge.net/project/grandperspectiv/grandperspective/#{version}/GrandPerspective-#{version.gsub('.', '_')}.dmg"
   homepage 'http://grandperspectiv.sourceforge.net/'
 
-  link 'GrandPerspective.app'
+  app 'GrandPerspective.app'
 end
