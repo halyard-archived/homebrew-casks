@@ -5,5 +5,5 @@ class Iterm2NightlyHalyard < Cask
   url 'https://www.iterm2.com/nightly/latest'
   homepage 'https://www.iterm2.com/'
 
-  link 'iTerm.app'
+  app 'iTerm.app'
 end
