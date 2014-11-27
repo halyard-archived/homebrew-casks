@@ -5,5 +5,5 @@ class BettertouchtoolHalyard < Cask
   url "http://boastr.net/releases/btt#{version}.zip"
   homepage 'http://blog.boastr.net/'
 
-  link 'BetterTouchTool.app'
+  app 'BetterTouchTool.app'
 end
