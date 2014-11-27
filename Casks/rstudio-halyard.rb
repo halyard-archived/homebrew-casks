@@ -5,5 +5,5 @@ class RstudioHalyard < Cask
   url "http://download1.rstudio.org/RStudio-#{version}.dmg"
   homepage 'http://www.rstudio.com/'
 
-  link 'RStudio.app'
+  app 'RStudio.app'
 end
