@@ -5,5 +5,5 @@ class TheUnarchiverHalyard < Cask
   url "https://theunarchiver.googlecode.com/files/TheUnarchiver#{version}.zip"
   homepage 'http://unarchiver.c3.cx/unarchiver'
 
-  link 'The Unarchiver.app'
+  app 'The Unarchiver.app'
 end
