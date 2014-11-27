@@ -5,5 +5,5 @@ class OnepasswordBetaHalyard < Cask
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   homepage 'https://agilebits.com/onepassword'
 
-  link '1Password 5.app'
+  app '1Password 5.app'
 end
