@@ -5,7 +5,7 @@ class BartenderHalyard < Cask
   url "http://www.macbartender.com/updates/#{version.gsub '.', '-'}/Bartender.zip"
   homepage 'http://www.macbartender.com/'
 
-  link 'Bartender.app'
+  app 'Bartender.app'
 
   after_install do
     # Don't ask to move the app bundle to /Applications
