@@ -5,5 +5,5 @@ class GoogleDriveHalyard < Cask
   url 'https://dl.google.com/drive/installgoogledrive.dmg'
   homepage 'https://drive.google.com/'
 
-  link 'Google Drive.app'
+  app 'Google Drive.app'
 end
