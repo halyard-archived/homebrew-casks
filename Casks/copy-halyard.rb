@@ -5,5 +5,5 @@ class CopyHalyard < Cask
   url 'https://copy.com/install/mac/Copy.dmg'
   homepage 'https://www.copy.com/'
 
-  link 'Copy.app'
+  app 'Copy.app'
 end
