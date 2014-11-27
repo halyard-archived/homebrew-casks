@@ -5,5 +5,5 @@ class LingonXHalyard < Cask
   url 'http://www.peterborgapps.com/downloads/LingonX.zip'
   homepage 'http://www.peterborgapps.com/lingon/'
 
-  link 'Lingon X.app'
+  app 'Lingon X.app'
 end
