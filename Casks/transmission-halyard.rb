@@ -5,5 +5,5 @@ class TransmissionHalyard < Cask
   url "https://transmission.cachefly.net/Transmission-#{version}.dmg"
   homepage 'http://www.transmissionbt.com/'
 
-  link 'Transmission.app'
+  app 'Transmission.app'
 end
