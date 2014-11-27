@@ -5,5 +5,5 @@ class SequelproHalyard < Cask
   url "https://sequel-pro.googlecode.com/files/sequel-pro-#{version}.dmg"
   homepage 'http://www.sequelpro.com/'
 
-  link 'Sequel Pro.app'
+  app 'Sequel Pro.app'
 end
