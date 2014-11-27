@@ -5,6 +5,6 @@ class VagrantHalyard < Cask
   url "https://dl.bintray.com/mitchellh/vagrant/vagrant_#{version}.dmg"
   homepage 'http://www.vagrantup.com'
 
-  install 'Vagrant.pkg'
+  pkg 'Vagrant.pkg'
   uninstall :script => { :executable => 'uninstall.tool', :input => %w[Yes] }
 end
