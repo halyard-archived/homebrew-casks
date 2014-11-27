@@ -5,5 +5,5 @@ class LuxdeluxHalyard < Cask
   url 'http://sillysoft.net/download/LuxDelux.app.zip'
   homepage 'http://sillysoft.net/lux/'
 
-  link 'Lux Delux.app'
+  app 'Lux Delux.app'
 end
