@@ -5,7 +5,7 @@ class IstatMenusHalyard < Cask
   url "https://s3.amazonaws.com/bjango/files/istatmenus5/istatmenus#{version}.zip"
   homepage 'http://bjango.com/mac/istatmenus/'
 
-  link 'iStat Menus.app'
+  app 'iStat Menus.app'
 
   after_install do
     # Don't ask to move the app bundle to /Applications
