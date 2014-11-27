@@ -5,7 +5,7 @@ class FluxHalyard < Cask
   url "https://justgetflux.com/mac/Flux#{version}.zip"
   homepage 'http://justgetflux.com'
 
-  link 'Flux.app'
+  app 'Flux.app'
 
   after_install do
     # Don't ask to move the app bundle to /Applications
