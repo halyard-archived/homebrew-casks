@@ -5,5 +5,5 @@ class GoogleChromeDevHalyard < Cask
   url 'https://dl.google.com/chrome/mac/dev/googlechrome.dmg'
   homepage 'http://dev.chromium.org/getting-involved/dev-channel'
 
-  link 'Google Chrome.app'
+  app 'Google Chrome.app'
 end
