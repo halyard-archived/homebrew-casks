@@ -5,5 +5,5 @@ class JreHalyard < Cask
   url "https://support.apple.com/downloads/DL1572/en_US/JavaForOSX#{version}.dmg"
   homepage 'http://support.apple.com/kb/DL1572'
 
-  install 'JavaForOSX.pkg'
+  pkg 'JavaForOSX.pkg'
 end
