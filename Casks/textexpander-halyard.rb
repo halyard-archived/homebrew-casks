@@ -5,5 +5,5 @@ class TextexpanderHalyard < Cask
   url "http://cdn.smilesoftware.com/TextExpander_#{version}.zip"
   homepage 'http://www.smilesoftware.com/TextExpander/index.html'
 
-  link 'TextExpander.app'
+  app 'TextExpander.app'
 end
