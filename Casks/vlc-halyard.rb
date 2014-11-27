@@ -5,5 +5,5 @@ class VlcHalyard < Cask
   url "https://get.videolan.org/vlc/#{version}/macosx/vlc-#{version}.dmg"
   homepage 'http://www.videolan.org/vlc/'
 
-  link 'VLC.app'
+  app 'VLC.app'
 end
