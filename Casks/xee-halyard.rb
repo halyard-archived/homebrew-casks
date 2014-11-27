@@ -5,5 +5,5 @@ class XeeHalyard < Cask
   url "http://wakaba.c3.cx/releases/mac/Xee#{version}.dmg"
   homepage 'http://xee.c3.cx/'
 
-  link 'Xee³.app', :target => 'Xee.app'
+  app 'Xee³.app', :target => 'Xee.app'
 end
