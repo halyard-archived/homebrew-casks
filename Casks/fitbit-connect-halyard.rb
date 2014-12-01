@@ -1,4 +1,4 @@
-cask :v1 => 'fitbit-connect' do
+cask :v1 => 'fitbit-connect-halyard' do
   version '2.0.0.6563'
   sha256 '383a2bfbcd6455ef100846b49c25fedca0730310114bf03286e00403b86aeb4a'
 
