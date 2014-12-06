@@ -1,4 +1,4 @@
-class LittleSnitchNightlyHalyard < Cask
+cask :v1 => 'little-snitch-nightly-halyard' do
   version '3.5-nightly-(4222)'
   sha256 'ebac10e6a526aa44f6aaa5f903f0e9e06a5c3bb483a178519ac0625bf7a303f7'
 

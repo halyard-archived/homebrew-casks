@@ -1,4 +1,4 @@
-class TextexpanderHalyard < Cask
+cask :v1 => 'textexpander-halyard' do
   version '4.3.4'
   sha256 'f5862333a3c9da5292c9c91bff55a3c7a1358481aa6871237b9661a22694eda1'
 

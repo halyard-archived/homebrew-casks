@@ -1,4 +1,4 @@
-class BartenderHalyard < Cask
+cask :v1 => 'bartender-halyard' do
   version '1.2.27'
   sha256 '20a147b81bb5d4006895ee9c6e313bd48e7098c8e0180eaffced2e3db06dc3ff'
 

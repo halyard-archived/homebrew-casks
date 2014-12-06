@@ -1,4 +1,4 @@
-class GoogleDriveHalyard < Cask
+cask :v1 => 'google-drive-halyard' do
   version 'latest'
   sha256 :no_check
 

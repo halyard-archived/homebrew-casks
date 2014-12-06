@@ -1,4 +1,4 @@
-class KextDropHalyard < Cask
+cask :v1 => 'kext-drop-halyard' do
   version '1.1'
   sha256 '49694a76474b45e24a2fa9d425b8aadf2c0b25b4f64a89016136963ecc8e0662'
 

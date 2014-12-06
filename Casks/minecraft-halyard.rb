@@ -1,4 +1,4 @@
-class MinecraftHalyard < Cask
+cask :v1 => 'minecraft-halyard' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-class ZeroxedHalyard < Cask
+cask :v1 => 'zeroxed-halyard' do
   version '1.1.3'
   sha256 '56b68898c7a8c1169e9f42790091b100841c3d43549445dc3c4986fae7152793'
 

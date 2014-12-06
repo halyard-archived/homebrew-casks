@@ -1,4 +1,4 @@
-class FluxHalyard < Cask
+cask :v1 => 'flux-halyard' do
   version '34.0'
   sha256 'ba224837556d5cd57eac29e8ecbda68af8a577ad42b0f44a052439a83986d53f'
 

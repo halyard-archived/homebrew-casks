@@ -1,4 +1,4 @@
-class OnepasswordBetaHalyard < Cask
+cask :v1 => 'onepassword-beta-halyard' do
   version '5.1.BETA-9'
   sha256 '80cfe3b10e140948d40cd791ad8e83eaed4ff9a12c1c7432864148cb42169e05'
 

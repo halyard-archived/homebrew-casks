@@ -1,4 +1,4 @@
-class HipchatHalyard < Cask
+cask :v1 => 'hipchat-halyard' do
   version '3.1-145'
   sha256 '5146c75a97b16e0a568237378290c0c85272b946bbf4478610ee240803bd32d6'
 
