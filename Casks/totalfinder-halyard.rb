@@ -1,6 +1,6 @@
 cask :v1 => 'totalfinder-halyard' do
-  version '1.6.14'
-  sha256 '29c47d2cd86173ac7d7e7bbdd9d0f835ed62877a3cd25eaf3c8e5058e24d4073'
+  version '1.6.16'
+  sha256 '047040fff10ef1fa2aa3a1ddc8636fbaf0c7ca6a4ebeabfb966f3ae536959159'
 
   url "http://downloads.binaryage.com/TotalFinder-#{version}.dmg"
   homepage 'http://totalfinder.binaryage.com'
