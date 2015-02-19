@@ -1,4 +1,4 @@
-cask :v1 => 'cyberduck' do
+cask :v1 => 'cyberduck-halyard' do
   version '4.6.4'
   sha256 '20a6628be90b68c0625aa176c4bfa69308cec664a8da92e7a2470923c209dab9'
 
