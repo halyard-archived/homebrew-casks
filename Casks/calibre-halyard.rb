@@ -1,6 +1,6 @@
 cask :v1 => 'calibre-halyard' do
-  version '2.16.0'
-  sha256 'ed28638321dc22e7efc3c5c3f2618a61cf2d0ffb218c820c095580e175286659'
+  version '2.20.0'
+  sha256 '235d891a90a87a72e16d4c8979497268055ef6e22c1c3d8aff3d0ce2114c41c7'
 
   url "https://github.com/kovidgoyal/calibre/releases/download/v#{version}/calibre-#{version}.dmg"
   homepage 'http://calibre-ebook.com/'
