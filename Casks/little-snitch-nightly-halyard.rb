@@ -1,11 +1,18 @@
 cask :v1 => 'little-snitch-nightly-halyard' do
-  version '3.5-nightly-(4222)'
-  sha256 'ebac10e6a526aa44f6aaa5f903f0e9e06a5c3bb483a178519ac0625bf7a303f7'
+  version '3.5.2'
+  sha256 'bf88a0fe00550367e86acc7d02d508a45c3c5623eb75daadce32ddf74e14bec8'
 
-  url "http://www.obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version}.dmg"
-  homepage 'http://www.obdev.at/products/littlesnitch/index.html'
+  url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
+  name 'Little Snitch'
+  homepage 'http://www.obdev.at/products/littlesnitch/'
+  license :commercial
 
-  caveats do
-    manual_installer 'Little Snitch Installer.app'
-  end
+  installer :manual => 'Little Snitch Installer.app'
+
+  zap :delete => [
+                  '~/Library/Preferences/at.obdev.LittleSnitchNetworkMonitor.plist',
+                  '~/Library/Application Support/Little Snitch/rules.usr.xpl',
+                  '~/Library/Application Support/Little Snitch/configuration.xpl',
+                  '~/Library/Application Support/Little Snitch/configuration.user.xpl',
+                 ]
 end
