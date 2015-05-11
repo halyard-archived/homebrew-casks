@@ -1,6 +1,6 @@
 cask :v1 => 'istat-menus-halyard' do
-  version '5.03'
-  sha256 'd1292ec4b5415d43587d201af9fb056da937d75d3071584a74d83a3751d57538'
+  version '5.10'
+  sha256 'cde4c1b69201dbaa7a7f2adcf9ee5294d7b4201d141a3fde647a6bf90edc902b'
 
   url "https://s3.amazonaws.com/bjango/files/istatmenus5/istatmenus#{version}.zip"
   homepage 'http://bjango.com/mac/istatmenus/'
