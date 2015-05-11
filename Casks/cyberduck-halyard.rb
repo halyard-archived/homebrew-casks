@@ -1,10 +1,8 @@
 cask :v1 => 'cyberduck-halyard' do
-  version '4.6.4'
-  sha256 '20a6628be90b68c0625aa176c4bfa69308cec664a8da92e7a2470923c209dab9'
+  version '4.7'
+  sha256 'dfdd220e58d31eccd5cd2902d27050896ad57d23e4635b759cbcd40756bc180a'
 
   url "https://update.cyberduck.io/Cyberduck-#{version}.zip"
-  appcast 'https://version.cyberduck.io/changelog.rss',
-          :sha256 => '92446a436528335c288c095dbe13099308139321a718b396e5e5aa728cd073b3'
   homepage 'http://cyberduck.io/'
   license :gpl
 
