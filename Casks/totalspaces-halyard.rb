@@ -1,6 +1,6 @@
 cask :v1 => 'totalspaces-halyard' do
-  version '2.2.9'
-  sha256 '66656dab328455906fd6e757bd966efac7d3a364b66155c847de55bfc57d8f14'
+  version '2.2.20'
+  sha256 'd8d200ba30593a6a2ce58f89a10b65d4084f1eb686307ba8d11a5f5944389206'
 
   url "http://downloads.binaryage.com/TotalSpaces2-#{version}.dmg"
   homepage 'http://totalspaces.binaryage.com/'
