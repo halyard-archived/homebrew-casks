@@ -1,6 +1,6 @@
 cask :v1 => 'lingon-x-halyard' do
-  version '2.0'
-  sha256 'edfee8715b7f33e61e45a56cff0a17aa52f69f53ae9a57087d314fac401687ad'
+  version '2.1'
+  sha256 '6e3c8018742852d48f7c156ec7fa9378406c62af2bc76fd0104ddec626c32c47'
 
   url 'http://www.peterborgapps.com/downloads/LingonX2.zip'
   homepage 'http://www.peterborgapps.com/lingon/'
