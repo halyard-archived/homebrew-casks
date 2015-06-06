@@ -1,6 +1,6 @@
 cask :v1 => 'airmail-beta-halyard' do
-  version '2.1-304'
-  sha256 'dc1684fc90f6eb99b3d7c35148027fb3d96db6f60d8f3e71a98ee81b8e11a483'
+  version '2.1-308'
+  sha256 'bc0ab0f0ba1bc9e28dfbdceb05d56ea1f5592e203c9e35b6aefd275f07ae3490'
 
   url 'https://rink.hockeyapp.net/api/2/apps/84be85c3331ee1d222fd7f0b59e41b04?format=zip'
   homepage 'http://airmailapp.com/beta/'
