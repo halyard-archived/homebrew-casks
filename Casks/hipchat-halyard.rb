@@ -1,6 +1,6 @@
 cask :v1 => 'hipchat-halyard' do
-  version '3.2.1-160'
-  sha256 '46d5f98be73c39f2c001f3aa834b795146044090d4f1b9452004a9610ec3f17f'
+  version '3.3.1-197'
+  sha256 '54610e269c776c13ff569830eb9e29d7a0c8fbbc40cdb82826caaadbe20b912e'
 
   url "http://downloads.hipchat.com.s3.amazonaws.com/osx/HipChat-#{version}.zip"
   appcast 'https://www.hipchat.com/release_notes/appcast/mac'
