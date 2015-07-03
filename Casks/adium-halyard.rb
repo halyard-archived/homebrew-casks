@@ -3,7 +3,6 @@ cask :v1 => 'adium-halyard' do
   sha256 'bca3ac81d33265b71c95a3984be80715fbd98f38d7c463d0441d43a335ed399a'
 
   url "http://download.adium.im/Adium_#{version}.dmg"
-  appcast 'http://www.adium.im/sparkle/update.php'
   homepage 'https://www.adium.im/'
   license :oss
 
