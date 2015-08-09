@@ -1,6 +1,6 @@
 cask :v1 => 'vlc-halyard' do
-  version '2.1.5'
-  sha256 '923504e296829f4253af8276b992636f72e56232ecdbdcf6003647ee662257f2'
+  version '2.2.1'
+  sha256 'ef881ca19fc7cc6b7c54699c99c064b9a5d553aa4181d1d1e185758d32405740'
 
   url "https://get.videolan.org/vlc/#{version}/macosx/vlc-#{version}.dmg"
   homepage 'http://www.videolan.org/vlc/'
