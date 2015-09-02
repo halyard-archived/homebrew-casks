@@ -1,6 +1,6 @@
 cask :v1 => 'alfred-halyard' do
-  version '2.7.2_406'
-  sha256 'bfd239d760d5f2c306c79b9e02ef37111ee797f8d69a6064ed6accda3d91988d'
+  version '2.7.2_407'
+  sha256 '303f4a0f7965d20e8ca86408f120c3dc01fcd13f5379aab2f4d7ef4e3f8d07a9'
 
   url "http://cachefly.alfredapp.com/Alfred_#{version}.zip"
   homepage 'http://www.alfredapp.com/'
