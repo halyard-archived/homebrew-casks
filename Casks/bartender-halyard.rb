@@ -1,6 +1,6 @@
 cask :v1 => 'bartender-halyard' do
   version '2.0.2'
-  sha256 '0a5cb9c1119cb371d9f3ccd1b29c0ad7802e8535152731b13e9c33a023313e08'
+  sha256 'fc113a9f0b1eff15f296b0a11c59ec90ae564bab132f1ed9cb9160f955e2c9c2'
 
   url "http://macbartender.com/B2/updates/#{version.gsub('.', '-')}/Bartender%202.zip"
   homepage 'http://www.macbartender.com/'
