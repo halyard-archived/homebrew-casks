@@ -1,11 +1,13 @@
 cask :v1 => 'gpgtools-halyard' do
-  version '2015.08'
-  sha256 '8c3e34fa6a6d579e413ed278b0c50a54150793741dbba40923621d37efafafa2'
+  version '2015.09'
+  sha256 '0ec0f4bb66ef660d3c3b0433dd3186e093a1b4f23bf8fac8b4ebca9fa6d80420'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
   gpg "#{url}.sig",
       :key_url => 'https://gpgtools.org/GPGTools%2000D026C4.asc'
   name 'GPG Suite'
+  appcast 'https://gpgtools.org/releases/gka/appcast.xml',
+          :sha256 => '23d1d5dea53c4c380bed5f7b6331060539e3acd62cd844bda834388d0a26da81'
   homepage 'https://gpgtools.org/'
   license :gpl
 
@@ -34,6 +36,8 @@ cask :v1 => 'gpgtools-halyard' do
                           ],
             :delete => [
                         '/Applications/GPG Keychain Access.app',
+                        '/Applications/GPG Keychain.app',
+                        '/usr/local/MacGPG2',
                         '/Library/Services/GPGServices.service',
                         '/Library/Mail/Bundles/GPGMail.mailbundle',
                         '/Library/PreferencePanes/GPGPreferences.prefPane',
@@ -47,6 +51,7 @@ cask :v1 => 'gpgtools-halyard' do
                         '~/Library/Services/GPGServices.service',
                         '~/Library/Mail/Bundles/GPGMail.mailbundle',
                         '~/Library/PreferencePanes/GPGPreferences.prefPane',
+                        # todo expand/glob for ~/Library/Caches/org.gpgtools.gpg*
                        ]
 
   caveats do
