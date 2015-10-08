@@ -5,7 +5,7 @@ cask :v1 => 'bartender-halyard' do
   url "http://macbartender.com/B2/updates/#{version.gsub('.', '-')}/Bartender%202.zip"
   homepage 'http://www.macbartender.com/'
 
-  app 'Bartender.app'
+  app 'Bartender 2.app'
 
   postflight do
     suppress_move_to_applications
