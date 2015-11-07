@@ -1,6 +1,6 @@
 cask :v1 => 'onepassword-beta-halyard' do
-  version '5.4'
-  sha256 '1ac9970f8a8abb456f4d310d4e6f680d30bcd19f053f63e1e08122757a9b2a95'
+  version '5.4.1'
+  sha256 '39e528fa9030b44fd81afbf245e0c7d93ace1dc5676a077ae625063eacc46c92'
 
   url "https://cache.agilebits.com/dist/1P/mac4/1Password-#{version}.zip"
   homepage 'https://agilebits.com/onepassword'
