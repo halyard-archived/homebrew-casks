@@ -1,6 +1,6 @@
 cask :v1 => 'flux-halyard' do
-  version '36-3'
-  sha256 '439b83c1886e8dee2fb79f9abb047cddf0fcd7dae7d6b68308a65e3954d63333'
+  version '36-5'
+  sha256 '83fcca5c8b050da1e898bf9e39e01ba62ba766ecfbebc9ebc50dc910f249f5c6'
 
   url "https://justgetflux.com/mac/Flux#{version}.zip"
   homepage 'http://justgetflux.com'
