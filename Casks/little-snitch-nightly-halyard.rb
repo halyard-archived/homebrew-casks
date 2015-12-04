@@ -1,8 +1,8 @@
 cask :v1 => 'little-snitch-nightly-halyard' do
-  version '3.6'
-  sha256 'f33bf45f975ebdd5034ad5e53a65469377ace557492ea752098ba7ad0c09a07a'
+  version '3.6.2-nightly-(4358)'
+  sha256 'fa6b24ba5b2afb9c2b18b3fd7869c830e6c45e31d71c154c524094a85d25bafd'
 
-  url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
+  url "https://www.obdev.at/downloads/littlesnitch/nightly/LittleSnitch-#{version}.dmg"
   name 'Little Snitch'
   homepage 'https://www.obdev.at/products/littlesnitch/'
   license :commercial
