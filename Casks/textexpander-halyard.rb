@@ -1,8 +1,8 @@
 cask :v1 => 'textexpander-halyard' do
   version '5.1.3'
-  sha256 '1f2675c14b5e8efadc827443078cdba7e32a3ccce64bfa58aebb473d5beb6ac6'
+  sha256 '28873bc18f4d62eda453e31609966d971f8165691ec4b5f3a8a37382cec5145c'
 
-  url "http://cdn.smilesoftware.com/TextExpander_#{version}.zip"
+  url "http://dl.smilesoftware.com/com.smileonmymac.textexpander/TextExpander.zip"
   homepage 'http://www.smilesoftware.com/TextExpander/index.html'
 
   app 'TextExpander.app'
