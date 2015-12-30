@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.alfredapp.com/'
+   xpath '//*[@id="intro"]/a[1]/@href'
+   regex /^https:\/\/cachefly\.alfredapp\.com\/Alfred_([\d._]+)\.zip$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'alfred-halyard'
+  end
+end

@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://gpgtools.org/releases/gka/appcast.xml'
+   xpath '/html/body/rss/channel/item/title'
+   regex /^GPG Suite ([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'gpgtools-halyard'
+  end
+end

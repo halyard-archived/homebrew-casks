@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.obdev.at/products/littlesnitch/download.html'
+   xpath '//div[@class="nightly"]//span[@class="version-number"]'
+   regex /([\d.]+) \((\d+)\)/, '\1-nightly-(\2)'
+  end
+
+  actual do
+    homebrew_cask
+    name 'little-snitch-nightly-halyard'
+  end
+end

@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'http://appcast.boastr.net/'
+   xpath '/html/body/rss/channel/item/enclosure/@url'
+   regex /^http:\/\/bettertouchtool\.com\/releases\/btt([\d.]+)d.zip$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'bettertouchtool-halyard'
+  end
+end

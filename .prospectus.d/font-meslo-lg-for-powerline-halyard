@@ -1,0 +1,11 @@
+item do
+  expected do
+    github_tag
+    repo 'halyard/font-meslo-powerline'
+  end
+
+  actual do
+    homebrew_cask
+    name 'font-meslo-lg-for-powerline-halyard'
+  end
+end

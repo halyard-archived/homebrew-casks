@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://smilesoftware.com/textexpander/download'
+   xpath '//*[@id="download"]'
+   regex /^TextExpander.([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'textexpander-halyard'
+  end
+end
