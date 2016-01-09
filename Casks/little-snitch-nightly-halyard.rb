@@ -1,4 +1,4 @@
-cask :v1 => 'little-snitch-nightly-halyard' do
+cask 'little-snitch-nightly-halyard' do
   version '3.6.2-nightly-(4358)'
   sha256 'fa6b24ba5b2afb9c2b18b3fd7869c830e6c45e31d71c154c524094a85d25bafd'
 

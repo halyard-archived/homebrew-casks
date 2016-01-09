@@ -1,4 +1,4 @@
-cask :v1 => 'dropbox-halyard' do
+cask 'dropbox-halyard' do
   version 'latest'
   sha256 :no_check
 
