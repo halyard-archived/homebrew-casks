@@ -1,6 +1,6 @@
 cask 'crashplan-halyard' do
   version '4.3.5'
-  sha256 'f9c923b6c854132824423d6c3330dff38100e23fc750c8212b09a7356db0a59a'
+  sha256 'c94a331199917055b9bd9e688df8af22d79bb9711b2a8f6662ffef587a5fd0cd'
 
   url "https://download.code42.com/installs/mac/install/CrashPlanPROe/CrashPlanPROe_#{version}_Mac.dmg"
   homepage 'https://www.code42.com/products/crashplan/'
@@ -9,8 +9,4 @@ cask 'crashplan-halyard' do
 
   uninstall script:  'Uninstall.app/Contents/Resources/uninstall.sh',
             pkgutil: 'com.crashplan.app.pkg'
-
-  postflight do
-    suppress_move_to_applications :key => 'suppressMoveToApplications'
-  end
 end
