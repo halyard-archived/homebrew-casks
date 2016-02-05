@@ -3,7 +3,7 @@ item do
    url_xpath
    url 'http://appcast.boastr.net/'
    xpath '/html/body/rss/channel/item/enclosure/@url'
-   regex /^http:\/\/.*\/btt([\d.]+\w+).zip$/
+   regex /^https:\/\/.*\/btt([\d.]+\w+).zip$/
   end
 
   actual do
