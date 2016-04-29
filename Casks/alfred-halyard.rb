@@ -1,6 +1,6 @@
 cask 'alfred-halyard' do
-  version '2.8.3_435'
-  sha256 'd3ff9dd4a3a889cf689f817feed6bc06b49346cfcf4985cf6a3b4c1639fb2c55'
+  version '2.8.4_437'
+  sha256 'def068cc763213aba11c07c18cd432740c81026deb31711699f7545e757846b5'
 
   url "http://cachefly.alfredapp.com/Alfred_#{version}.zip"
   homepage 'http://www.alfredapp.com/'
@@ -11,4 +11,4 @@ cask 'alfred-halyard' do
   postflight do
     suppress_move_to_applications :key => 'suppressMoveToApplications'
   end
-nd
+end
