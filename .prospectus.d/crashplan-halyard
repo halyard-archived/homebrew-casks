@@ -1,9 +1,9 @@
 item do
   expected do
    url_xpath
-   url 'https://support.code42.com/Administrator/4/Planning_And_Installing/Code42_Platform_Installers'
-   xpath '//div[@id="section_4"]/h4'
-   regex /([\d.]+) CrashPlan App/
+   url 'https://support.code42.com/Administrator/5/Planning_And_Installing/Code42_Platform_Installers'
+   xpath '//*[@id="section_6"]/h5'
+   regex /Version ([\d.]+)/
   end
 
   actual do
