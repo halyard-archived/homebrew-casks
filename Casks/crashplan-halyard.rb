@@ -5,7 +5,7 @@ cask 'crashplan-halyard' do
   url "https://download.code42.com/installs/mac/install/Code42CrashPlan/Code42CrashPlan_#{version}_Mac.dmg"
   homepage 'https://www.code42.com/products/crashplan/'
 
-  pkg 'Install CrashPlanPROe.pkg'
+  pkg 'Install Code42 CrashPlan.pkg'
 
   uninstall script:  'Uninstall.app/Contents/Resources/uninstall.sh',
             pkgutil: 'com.crashplan.app.pkg'
