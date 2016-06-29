@@ -3,7 +3,7 @@ item do
    url_xpath
    url 'https://justgetflux.com/mac/macflux.xml'
    xpath '/html/body/rss/channel/item[1]/enclosure/@url'
-   regex /^https:\/\/justgetflux\.com\/mac\/Flux([\d-]+)\.zip$/
+   regex /^https:\/\/justgetflux\.com\/mac\/Flux([\d.-]+)\.zip$/
   end
 
   actual do

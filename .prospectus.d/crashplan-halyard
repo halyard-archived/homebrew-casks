@@ -2,7 +2,7 @@ item do
   expected do
    url_xpath
    url 'https://support.code42.com/Administrator/5/Planning_And_Installing/Code42_Platform_Installers'
-   xpath '//*[@id="section_6"]/h5'
+   xpath '//*[@id="section_11"]/h5'
    regex /Version ([\d.]+)/
   end
 
