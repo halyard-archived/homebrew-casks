@@ -1,9 +1,10 @@
 item do
   expected do
-   url_xpath
-   url 'https://support.code42.com/Administrator/5/Planning_And_Installing/Code42_Platform_Installers'
-   xpath '//*[@id="section_11"]/h5'
-   regex /Version ([\d.]+)/
+    url_xpath
+    url 'https://support.code42.com/Release_Notes'
+    xpath '//*[@id="section_1"]/table//ul'
+    # The below line contains non-breaking spaces
+    regex /.*\n\t+\u200B+CrashPlan PROe in private cloud environments -[\u00a0\d.\s&]* ([\d.]+)\n.*/m
   end
 
   actual do
