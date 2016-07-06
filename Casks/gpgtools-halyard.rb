@@ -1,6 +1,6 @@
 cask 'gpgtools-halyard' do
-  version '2015.09'
-  sha256 '0ec0f4bb66ef660d3c3b0433dd3186e093a1b4f23bf8fac8b4ebca9fa6d80420'
+  version '2016.07_v2'
+  sha256 '795001d0fd9e0bb027095ab2000298ce8454b82bf48002e97a0fe73a7e1eb296'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
   gpg "#{url}.sig",
