@@ -3,7 +3,7 @@ item do
    url_xpath
    url 'https://www.alfredapp.com/'
    xpath '//*[@id="intro"]/a[1]/@href'
-   regex /^https:\/\/cachefly\.alfredapp\.com\/Alfred_([\d._]+)\.zip$/
+   regex /^https:\/\/cachefly\.alfredapp\.com\/Alfred_([\d._]+)\.dmg$/
   end
 
   actual do
