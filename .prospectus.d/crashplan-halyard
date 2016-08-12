@@ -4,7 +4,7 @@ item do
     url 'https://support.code42.com/Release_Notes'
     xpath '//*[@id="section_1"]/table//ul'
     # The below line contains non-breaking spaces
-    regex /.*\n\t+\u200B+CrashPlan PROe in\u00a0private cloud environments -[\u00a0\d.\s&]* ([\d.]+)\n.*/m
+    regex /.*\n\t+\u200B+Code42 CrashPlan in private cloud environments - [\u00a0\d.\s&]* ([\d.]+)\n.*/m, '5.3.0'
   end
 
   actual do
