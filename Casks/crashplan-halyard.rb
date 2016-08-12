@@ -1,6 +1,6 @@
 cask 'crashplan-halyard' do
-  version '5.2.0'
-  sha256 'b725cc824176519b3a714f43e56b19f20fe7810bac86cb3efee88bd51d4c0aba'
+  version '5.3.0'
+  sha256 '721f08dfd8e3effb59862a88d5017ff35e57f8b7f4391ca79df6c1aac30181c0'
 
   url "https://download.code42.com/installs/mac/install/Code42CrashPlan/Code42CrashPlan_#{version}_Mac.dmg"
   homepage 'https://www.code42.com/products/crashplan/'
