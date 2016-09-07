@@ -4,6 +4,8 @@ cask 'crashplan-halyard' do
 
   url "https://download.code42.com/installs/mac/install/Code42CrashPlan/Code42CrashPlan_#{version}_Mac.dmg"
   homepage 'https://www.code42.com/products/crashplan/'
+  name 'CrashPlan'
+  license :commercial
 
   pkg 'Install Code42 CrashPlan.pkg'
 

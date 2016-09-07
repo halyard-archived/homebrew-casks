@@ -4,6 +4,8 @@ cask 'flux-halyard' do
 
   url "https://justgetflux.com/mac/Flux#{version}.zip"
   homepage 'http://justgetflux.com'
+  name 'Flux'
+  license :gratis
 
   app 'Flux.app'
 

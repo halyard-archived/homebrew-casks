@@ -7,7 +7,7 @@ cask 'gpgtools-halyard' do
       :key_url => 'https://gpgtools.org/GPGTools%2000D026C4.asc'
   name 'GPG Suite'
   appcast 'https://gpgtools.org/releases/gka/appcast.xml',
-          :sha256 => '23d1d5dea53c4c380bed5f7b6331060539e3acd62cd844bda834388d0a26da81'
+      checkpoint: '0c1cf1f2047fec41cf3af68106302f906fd593e8403b4a11b5877dbd1feb5091'
   homepage 'https://gpgtools.org/'
   license :gpl
 
