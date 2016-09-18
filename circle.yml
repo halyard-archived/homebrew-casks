@@ -1,6 +1,3 @@
-dependencies:
-  override:
-  - git clone https://github.com/Homebrew/brew.git $HOME/brew
 test:
   override:
-  - $HOME/brew/bin/brew cask audit Casks/*
+  - brew cask audit Casks/*
