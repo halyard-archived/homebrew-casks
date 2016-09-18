@@ -1,4 +1,4 @@
-cask 'onepassword-beta-halyard' do
+cask '1password-halyard' do
   version '6.5.BETA-17'
   sha256 '82cffe1ab63efeb7dcb265eb254801cbb7a2d930996cd95badd36010c4d85056'
 

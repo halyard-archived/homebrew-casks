@@ -1,4 +1,4 @@
-cask 'iterm2-nightly-halyard' do
+cask 'iterm2-halyard' do
   version :latest
   sha256 :no_check
 

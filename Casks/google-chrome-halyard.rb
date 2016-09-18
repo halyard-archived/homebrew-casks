@@ -1,4 +1,4 @@
-cask 'google-chrome-dev-halyard' do
+cask 'google-chrome-halyard' do
   version :latest
   sha256 :no_check
 
