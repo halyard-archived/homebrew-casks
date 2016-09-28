@@ -1,3 +1,9 @@
+checkout:
+  post:
+  - chmod g-w Casks/*
+dependencies:
+  override:
+  - git clone https://github.com/Linuxbrew/brew.git ~/.linuxbrew
 test:
   override:
-  - brew cask audit Casks/*
+  - ~/.linuxbrew/bin/brew cask audit ./Casks/*
