@@ -1,6 +1,6 @@
 cask 'little-snitch-halyard' do
-  version '3.7.1'
-  sha256 'e6332ee70385f459d9803b0a582d5344bb9dab28bcd56e247ae69866cc321802'
+  version '3.7.2'
+  sha256 '88200d52bb6f907a902feb3eb10491181485fd914371d80627694683d9762ed3'
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   name 'Little Snitch'
