@@ -1,8 +1,8 @@
 item do
   expected do
    url_xpath
-   url 'http://appcast.boastr.net/'
-   xpath '/html/body/rss/channel/item/enclosure/@url'
+   url 'https://updates.bettertouchtool.net/appcast.xml'
+   xpath '/html/body/rss/channel/item[1]/enclosure/@url'
    regex /^https:\/\/.*\/btt([\d.]+\w+).zip$/
   end
 
