@@ -1,0 +1,15 @@
+require 'open-uri'
+require 'json'
+
+item do
+  expected do
+    static
+    url = 'https://objective-see.com/products.json'
+    set JSON.parse(open(url).read)['BlockBlock']['version']
+  end
+
+  actual do
+    homebrew_cask
+    name 'blockblock-halyard'
+  end
+end
