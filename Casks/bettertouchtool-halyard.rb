@@ -1,6 +1,6 @@
 cask 'bettertouchtool-halyard' do
-  version '2.12b'
-  sha256 '74c61fcb91a4108021a7f31bea4d1bf2af32564d5602b3390d4923dab504deae'
+  version '2.20b'
+  sha256 '18f60f513418d0f7c979765ad7e87a0d72168099d22b5c0d50df9c9544acafea'
 
   url "https://bettertouchtool.net/releases/btt#{version}.zip"
   homepage 'http://blog.boastr.net/'
