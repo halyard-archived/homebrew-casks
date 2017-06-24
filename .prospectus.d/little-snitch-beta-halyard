@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.obdev.at/products/littlesnitch/releasenotes.html'
+   xpath '//*[@id="releasenotespage"]/body/div[2]/section[2]/div[1]/div[2]/h3/text()'
+   regex /^Little Snitch ([\d.]+) Public Beta (\d+) \(\d+\)$/, '4.0-public-beta-1'
+  end
+
+  actual do
+    homebrew_cask
+    name 'little-snitch-beta-halyard'
+  end
+end
