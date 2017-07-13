@@ -7,7 +7,5 @@ cask 'knockknock-halyard' do
   name 'KnockKnock'
   homepage 'https://objective-see.com/products/knockknock.html'
 
-  depends_on macos: '>= :mountain_lion'
-
   app 'KnockKnock.app'
 end

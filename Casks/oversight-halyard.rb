@@ -7,8 +7,6 @@ cask 'oversight' do
   name 'OverSight'
   homepage 'https://objective-see.com/products/oversight.html'
 
-  depends_on macos: '>= :yosemite'
-
   installer script: {
                       executable: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer",
                       args:       ['-install'],
