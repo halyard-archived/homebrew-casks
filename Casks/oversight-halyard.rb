@@ -1,4 +1,4 @@
-cask 'oversight' do
+cask 'oversight-halyard' do
   version '1.1.2'
   sha256 '4d930136f7e99880f7fb98cd195c47ee69b011c726be1e860ee4b43546386bd5'
 
