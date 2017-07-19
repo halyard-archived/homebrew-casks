@@ -7,16 +7,11 @@ cask 'oversight-halyard' do
   name 'OverSight'
   homepage 'https://objective-see.com/products/oversight.html'
 
-  installer script: {
-                      executable: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer",
-                      args:       ['-install'],
-                      sudo:       true,
-                    }
+  installer manual: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer"
 
   uninstall script: {
                       executable: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer",
                       args:       ['-uninstall'],
-                      sudo:       true,
                     }
 
   zap delete: [
