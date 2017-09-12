@@ -9,7 +9,6 @@ cask 'gpgtools-halyard' do
   appcast 'https://gpgtools.org/releases/gka/appcast.xml',
       checkpoint: '0c1cf1f2047fec41cf3af68106302f906fd593e8403b4a11b5877dbd1feb5091'
   homepage 'https://gpgtools.org/'
-  license :gpl
 
   pkg 'Install.pkg'
   # todo, remove all ENV variables

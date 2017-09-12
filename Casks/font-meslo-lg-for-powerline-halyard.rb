@@ -5,7 +5,6 @@ cask 'font-meslo-lg-for-powerline-halyard' do
   url "https://github.com/halyard/font-meslo-powerline/archive/#{version}.tar.gz"
   homepage 'https://github.com/halyard/font-meslo-powerline'
   name 'Meslo LG For Powerline'
-  license :apache
 
   base = "font-meslo-powerline-#{version}/Meslo LG %s %s for Powerline.otf"
 

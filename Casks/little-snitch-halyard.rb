@@ -5,7 +5,6 @@ cask 'little-snitch-halyard' do
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   name 'Little Snitch'
   homepage 'https://www.obdev.at/products/littlesnitch/'
-  license :commercial
 
   installer :manual => 'Little Snitch Installer.app'
 

@@ -5,7 +5,6 @@ cask 'hyperspace-halyard' do
   url "https://github.com/halyard/hyperspace/releases/download/v#{version}/Hyperspace#{version}.dmg"
   homepage 'https://github.com/halyard/hyperspace'
   name 'Hyperspace'
-  license :unknown
 
   screen_saver 'Hyperspace.saver'
 end
