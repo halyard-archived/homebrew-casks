@@ -1,57 +1,77 @@
 cask 'gpgtools-halyard' do
-  version '2016.10_v2'
-  sha256 '8dbc5821876ca5c470d0127087f782ba02a842c52e6e19336cd935db7c5859ab'
+  version '2017.1'
+  sha256 '01705da33b9dadaf5282d28f9ef58f2eb7cd8ff6f19b4ade78861bf87668a061'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
-  gpg "#{url}.sig",
-      :key_url => 'https://gpgtools.org/GPGTools%2000D026C4.asc'
-  name 'GPG Suite'
   appcast 'https://gpgtools.org/releases/gka/appcast.xml',
-      checkpoint: '0c1cf1f2047fec41cf3af68106302f906fd593e8403b4a11b5877dbd1feb5091'
+          checkpoint: 'c7e9de96763026580c821554221f7d1227fa76e7d32d6f7b30e876c67e7ed64d'
+  name 'GPG Suite'
   homepage 'https://gpgtools.org/'
+  gpg "#{url}.sig",
+      key_url: 'https://gpgtools.org/GPGTools%2000D026C4.asc'
+
+  auto_updates true
 
   pkg 'Install.pkg'
-  # todo, remove all ENV variables
-  postflight do
-    system '/usr/bin/sudo', '-E', '--',
-           '/usr/local/MacGPG2/libexec/fixGpgHome', Etc.getpwuid(Process.euid).name,
-                                                    ENV['GNUPGHOME'] ? ENV['GNUPGHOME'] : Pathname.new(File.expand_path('~')).join('.gnupg')
+
+  uninstall_postflight do
+    ['gpg', 'gpg2', 'gpg-agent'].map { |exec_name| "/usr/local/bin/#{exec_name}" }.each do |exec|
+      File.rm(exec) if File.exist?(exec) && File.readlink(exec).include?('MacGPG2')
+    end
   end
 
-  uninstall :pkgutil => 'org.gpgtools.*',
-            :quit => [
-                      'com.apple.mail',
-                      'org.gpgtools.gpgkeychainaccess',
-                      'org.gpgtools.gpgservices',
-                     ],
-            :launchctl => [
-                           'org.gpgtools.macgpg2.shutdown-gpg-agent',
-                           'org.gpgtools.Libmacgpg.xpc',
-                           'org.gpgtools.gpgmail.enable-bundles',
-                           'org.gpgtools.gpgmail.user-uuid-patcher',
-                           'org.gpgtools.gpgmail.uuid-patcher',
-                           'org.gpgtools.macgpg2.fix',
-                           'org.gpgtools.macgpg2.updater',
-                          ],
-            :delete => [
-                        '/Applications/GPG Keychain Access.app',
-                        '/Applications/GPG Keychain.app',
-                        '/usr/local/MacGPG2',
-                        '/Library/Services/GPGServices.service',
-                        '/Library/Mail/Bundles/GPGMail.mailbundle',
-                        '/Library/PreferencePanes/GPGPreferences.prefPane',
+  uninstall script:    {
+                         executable: "#{staged_path}/Uninstall.app/Contents/Resources/GPG Suite Uninstaller.app/Contents/Resources/uninstall.sh",
+                         sudo:       true,
+                       },
+            pkgutil:   'org.gpgtools.*',
+            quit:      [
+                         'com.apple.mail',
+                         'org.gpgtools.gpgkeychainaccess',
+                         'org.gpgtools.gpgkeychain',
+                         'org.gpgtools.gpgservices',
+                         # TODO: add "killall -kill gpg-agent"
+                       ],
+            launchctl: [
+                         'org.gpgtools.Libmacgpg.xpc',
+                         'org.gpgtools.gpgmail.patch-uuid-user',
+                         'org.gpgtools.macgpg2.fix',
+                         'org.gpgtools.macgpg2.shutdown-gpg-agent',
+                         'org.gpgtools.macgpg2.updater',
+                         'org.gpgtools.macgpg2.gpg-agent',
+                         'org.gpgtools.gpgmail.enable-bundles',
+                         'org.gpgtools.gpgmail.user-uuid-patcher',
+                         'org.gpgtools.gpgmail.uuid-patcher',
+                         'org.gpgtools.updater',
+                       ],
+            delete:    [
+                         '/Library/Services/GPGServices.service',
+                         '/Library/Mail/Bundles/GPGMail.mailbundle',
+                         '/Library/Mail/Bundles.gpgmail*',
+                         '/Network/Library/Mail/Bundles/GPGMail.mailbundle',
+                         '/usr/local/MacGPG2',
+                         '/private/etc/paths.d/MacGPG2',
+                         '/private/etc/manpaths.d/MacGPG2',
+                         '/private/tmp/gpg-agent',
+                         '/Library/PreferencePanes/GPGPreferences.prefPane',
+                         '/Library/Application Support/GPGTools',
+                         '/Library/Frameworks/Libmacgpg.framework',
                        ]
-  uninstall_postflight do
-    system '/bin/bash', '-c', '[[ "$(/usr/bin/readlink /usr/local/bin/gpg2)"      =~ MacGPG2 ]] && /bin/rm -- /usr/local/bin/gpg2'
-    system '/bin/bash', '-c', '[[ "$(/usr/bin/readlink /usr/local/bin/gpg)"       =~ MacGPG2 ]] && /bin/rm -- /usr/local/bin/gpg'
-    system '/bin/bash', '-c', '[[ "$(/usr/bin/readlink /usr/local/bin/gpg-agent)" =~ MacGPG2 ]] && /bin/rm -- /usr/local/bin/gpg-agent'
-  end
-  zap       :delete => [
-                        '~/Library/Services/GPGServices.service',
-                        '~/Library/Mail/Bundles/GPGMail.mailbundle',
-                        '~/Library/PreferencePanes/GPGPreferences.prefPane',
-                        # todo expand/glob for ~/Library/Caches/org.gpgtools.gpg*
-                       ]
+
+  zap delete: [
+                '~/Library/Services/GPGServices.service',
+                '~/Library/Mail/Bundles/GPGMail.mailbundle',
+                '~/Library/PreferencePanes/GPGPreferences.prefPane',
+                '~/Library/LaunchAgents/org.gpgtools.*',
+                '~/Library/Containers/com.apple.mail/Data/Library/Preferences/org.gpgtools.*',
+                '~/Library/Frameworks/Libmacgpg.framework',
+                '~/Containers/com.apple.mail/Data/Library/Frameworks/Libmacgpg.framework',
+                '~/Library/Caches/org.gpgtools.gpg*',
+              ],
+      trash:  [
+                '~/Library/Application Support/GPGTools',
+                '~/Library/Preferences/org.gpgtools.*',
+              ]
 
   caveats do
     files_in_usr_local
