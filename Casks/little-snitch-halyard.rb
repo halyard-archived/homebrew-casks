@@ -9,7 +9,6 @@ cask 'little-snitch-halyard' do
   homepage 'https://www.obdev.at/products/littlesnitch/index.html'
 
   auto_updates true
-  depends_on macos: '>= :el_capitan'
   container type: :naked
 
   installer manual: "LittleSnitch-#{version}.dmg/Little Snitch Installer.app"
