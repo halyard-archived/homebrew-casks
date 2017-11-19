@@ -1,4 +1,4 @@
-cask 'insomniax' do
+cask 'insomniax-halyard' do
   version '2.1.8'
   sha256 'abbf4b27e86da934042a1dcedd339ffb59e16c4aa8e0c0d44534533be42e3efb'
 
