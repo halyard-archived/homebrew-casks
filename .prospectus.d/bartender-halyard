@@ -1,0 +1,12 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.macbartender.com/release_notes/'
+   xpath '//*[@id="support"]/div[2]/div/div[1]/h1/text()[2]'
+  end
+
+  actual do
+    homebrew_cask
+    name 'bartender-halyard'
+  end
+end
