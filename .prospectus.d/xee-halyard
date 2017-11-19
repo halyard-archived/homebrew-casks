@@ -1,0 +1,15 @@
+
+
+item do
+  expected do
+   url_xpath
+   url 'https://updates.devmate.com/cx.c3.Xee3.xml'
+   xpath '/html/body/rss/channel/item/enclosure/@*[name()="sparkle:shortversionstring" or name()="url"]'
+   regex /^https:\/\/dl\.devmate\.com\/cx\.c3\.Xee3\/(\d+)\/(\d+)\/Xee-\d+\.zip([\d.]+)$/, '\3,\1:\2'
+  end
+
+  actual do
+    homebrew_cask
+    name 'xee-halyard'
+  end
+end
