@@ -1,4 +1,4 @@
-cask 'santa' do
+cask 'santa-halyard' do
   version '0.9.20'
   sha256 'dcfc535c97732380ce5a116f352110ca15ee7ebaef0eeb63b648148b21f5f3a4'
 
