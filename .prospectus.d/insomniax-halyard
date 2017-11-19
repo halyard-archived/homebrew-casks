@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'http://insomniax.semaja2.net/appcast.xml'
+   xpath '/html/body/rss/channel/item/enclosure/@url'
+   regex /^http:\/\/insomniax\.semaja2\.net\/InsomniaX-([\d.]+)\.tgz$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'insomniax-halyard'
+  end
+end
