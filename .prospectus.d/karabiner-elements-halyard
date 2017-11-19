@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://pqrs.org/osx/karabiner/history.html'
+   xpath '/html/body/div/section/h2[1]/text()'
+   regex /^Karabiner-Elements ([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'karabiner-elements-halyard'
+  end
+end
