@@ -7,16 +7,23 @@ cask 'oversight-halyard' do
   name 'OverSight'
   homepage 'https://objective-see.com/products/oversight.html'
 
-  installer manual: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer"
+  installer script: {
+                      executable: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer",
+                      args:       ['-install'],
+                      sudo:       true,
+                    }
 
   uninstall script: {
                       executable: "#{staged_path}/OverSight_Installer.app/Contents/MacOS/OverSight_Installer",
                       args:       ['-uninstall'],
+                      sudo:       true,
                     }
 
-  zap delete: [
-                '~/Library/Preferences/com.objective-see.OverSight.plist',
-                '~/Library/Application Support/Objective-See/OverSight',
-                '~/Library/Caches/com.objective-see.OverSightHelper',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Objective-See/OverSight',
+               '~/Library/Caches/com.objective-see.OverSight',
+               '~/Library/Caches/com.objective-see.OverSightHelper',
+               '~/Library/Preferences/com.objective-see.OverSight.plist',
+               '~/Library/Preferences/com.objective-see.OverSightHelper.plist',
+             ]
 end

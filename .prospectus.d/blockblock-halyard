@@ -1,11 +1,9 @@
-require 'open-uri'
-require 'json'
-
 item do
   expected do
-    static
-    url = 'https://objective-see.com/products.json'
-    set JSON.parse(open(url).read)['BlockBlock']['version']
+    url_xpath
+    url 'https://objective-see.com/products/blockblock.html'
+    xpath '/html/body/div/span[1]/span[2]/div[2]'
+    regex /.*current version: ([\d.]+) .*/m
   end
 
   actual do
