@@ -6,7 +6,7 @@ cask 'virtualbox-extension-pack-halyard' do
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
-  depends_on cask: 'virtualbox'
+  depends_on cask: 'virtualbox-halyard'
   container type: :naked
 
   stage_only true
