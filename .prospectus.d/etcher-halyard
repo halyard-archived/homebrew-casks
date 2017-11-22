@@ -1,0 +1,12 @@
+item do
+  expected do
+    github_release
+    repo 'resin-io/etcher'
+    regex /^v([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'etcher-halyard'
+  end
+end
