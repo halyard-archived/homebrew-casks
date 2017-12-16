@@ -1,6 +1,6 @@
 cask 'bartender-halyard' do
-  version '3.0.30'
-  sha256 '7ac2d7f2cfe733f85f91718363e05310f2a2dfde3354ad2994254e94b039a0bb'
+  version '3.0.32'
+  sha256 'bc37d1719d5067d3ca357406424d083e9f80c26009e064b86cbab426234496d1'
 
   url "https://macbartender.com/B2/updates/#{version.dots_to_hyphens}/Bartender%20#{version.major}.zip"
   name 'Bartender'
