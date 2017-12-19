@@ -1,6 +1,6 @@
 cask 'yubikey-manager-halyard' do
-  version '0.3.2b'
-  sha256 'bf0111af73991f2506ab42d71c59ab37564bb104058396463cef4ffc84e11d16'
+  version '0.4.0'
+  sha256 'f8cfac5d9d00f1f003377ddfe41bbc251e22def148c5fd92a3163cbef63b3486'
 
   url "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-#{version}-mac.pkg"
   name 'Yubikey Manager'
