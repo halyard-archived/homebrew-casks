@@ -10,4 +10,4 @@ dependencies:
   - mkdir -p ~/.brew/Caskroom
 test:
   override:
-  - ~/.brew/bin/brew cask audit ./Casks/*
+  - rvm-exec $(cat .ruby-version) ~/.brew/bin/brew cask audit ./Casks/*
