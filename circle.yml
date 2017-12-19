@@ -1,6 +1,3 @@
-machine:
-  ruby:
-    version: 2.4.3
 checkout:
   post:
   - chmod g-w Casks/*
@@ -10,4 +7,4 @@ dependencies:
   - mkdir -p ~/.brew/Caskroom
 test:
   override:
-  - rvm-exec $(cat .ruby-version) ~/.brew/bin/brew cask audit ./Casks/*
+  - ~/.brew/bin/brew cask audit ./Casks/*
