@@ -3,7 +3,7 @@ item do
    url_xpath
    url 'https://www.rstudio.com/products/rstudio/release-notes/'
    xpath '//section[@id="content"]/div/div/div/div/h2'
-   regex /^RStudio v([\d.]+) – .*$/
+   #regex /^RStudio v([\d.]+) – .*$/
   end
 
   actual do
