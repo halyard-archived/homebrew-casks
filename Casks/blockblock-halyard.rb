@@ -1,6 +1,6 @@
 cask 'blockblock-halyard' do
-  version '0.9.9'
-  sha256 '133ebdffd9847e17af048cdeb069ba5d1978595f6855d7fabf0cface0e562609'
+  version '0.9.9.1'
+  sha256 'e3c3043a6628e6fc455edc39068d59e91d11186a30a08cd3e505a5d65c26e964'
 
   # bitbucket.org/objective-see was verified as official when first introduced to the cask
   url "https://bitbucket.org/objective-see/deploy/downloads/BlockBlock_#{version}.zip"
