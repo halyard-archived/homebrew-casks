@@ -1,6 +1,6 @@
 cask 'hammerspoon-halyard' do
-  version '0.9.58'
-  sha256 'a5dbe35a9c076665e26d038d74eece78bc58349441df0a7ffa3a990a4e9efc3c'
+  version '0.9.59'
+  sha256 '8e9288aac1cdd4359b645fad530a771abd6acfad474544c668176925b9aaaf52'
 
   # github.com/Hammerspoon/hammerspoon was verified as official when first introduced to the cask
   url "https://github.com/Hammerspoon/hammerspoon/releases/download/#{version}/Hammerspoon-#{version}.zip"
