@@ -1,6 +1,6 @@
 cask 'yubikey-personalization-gui-halyard' do
-  version '3.1.24'
-  sha256 'bb13aeb006ca40fc1b16360250daa9ee08f85248cce7d4f21335f2ce6a7a3248'
+  version '3.1.25'
+  sha256 '45b270edd68c03e6470fe1bcb8dee79dad37c454b1e679838233041feb7ad23d'
 
   url "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubikey-personalization-gui-#{version}.pkg"
   name 'YubiKey Personalization GUI'
