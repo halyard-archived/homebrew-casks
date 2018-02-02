@@ -1,9 +1,8 @@
 cask 'transmission-halyard' do
-  version '2.92'
-  sha256 '926a878cac007e591cfcea987048abc0689d77e7729a28255b9ea7b73f22d693'
+  version '2.93'
+  sha256 '61cd9b74cc542458fe2e41be6ac76d8b4201a94293bf681f8d75e12e64bd8d95'
 
-  # github.com/transmission/transmission was verified as official when first introduced to the cask
-  url "https://github.com/transmission/transmission/releases/download/#{version}/transmission-#{version}.dmg"
+  url "https://github.com/transmission/transmission-releases/raw/master/Transmission-#{version}.dmg"
   name 'Transmission'
   homepage 'https://transmissionbt.com/'
 
