@@ -1,6 +1,6 @@
 cask 'rstudio-halyard' do
-  version '1.1.383'
-  sha256 'a30d71591789c3ee276c6376cc496bb75748dfe012d5e0b1e8a9f844d2472a43'
+  version '1.1.419'
+  sha256 '3af70da34340a9d10eda4f0b765610cbd5d6bfa94236b23692d056361cf8c7b2'
 
   url "https://download1.rstudio.org/RStudio-#{version}.dmg"
   name 'RStudio'

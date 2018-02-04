@@ -2,8 +2,8 @@ item do
   expected do
    url_xpath
    url 'https://www.rstudio.com/products/rstudio/release-notes/'
-   xpath '//section[@id="content"]/div/div/div/div/h2'
-   #regex /^RStudio v([\d.]+) – .*$/
+   xpath '//div[@class="fusion-text"]/h2[1]'
+   regex /^RStudio v([\d.]+) – .*/
   end
 
   actual do
