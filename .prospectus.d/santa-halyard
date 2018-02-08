@@ -1,7 +1,8 @@
 item do
   expected do
-    github_tag
+    github_release
     repo 'google/santa'
+    allow_prerelease
   end
 
   actual do
