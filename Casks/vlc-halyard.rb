@@ -1,6 +1,6 @@
 cask 'vlc-halyard' do
-  version '2.2.8'
-  sha256 '4406e025c566c5703ab11e53070d3e399680ddfb8994b60cb753079dffd2a027'
+  version '3.0.0'
+  sha256 'e6f7179cb06809b6101803da3ac4191edb72ecf82f31b8ae7dbf010e1a78ba26'
 
   url "https://get.videolan.org/vlc/#{version}/macosx/vlc-#{version}.dmg"
   name 'VLC media player'
