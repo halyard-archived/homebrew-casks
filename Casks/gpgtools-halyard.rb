@@ -1,14 +1,11 @@
 cask 'gpgtools-halyard' do
-  version '2017.3'
-  sha256 'a110b73a85f715baf2e633c01fe13c2af15afee22725e5caad3c1d4596c884e3'
+  version '2018.1'
+  sha256 'f2be13ca1aeb7d29ba46134d1d38f88de9c52eb1270ac00fd5f1bc305fd5921e'
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
-  appcast 'https://gpgtools.org/releases/gka/appcast.xml',
-          checkpoint: 'c7e9de96763026580c821554221f7d1227fa76e7d32d6f7b30e876c67e7ed64d'
   name 'GPG Suite'
   homepage 'https://gpgtools.org/'
-  gpg "#{url}.sig",
-      key_url: 'https://gpgtools.org/GPGTools%2000D026C4.asc'
+  gpg "#{url}.sig", key_url: 'https://gpgtools.org/GPGTools%2000D026C4.asc'
 
   auto_updates true
 
