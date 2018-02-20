@@ -1,6 +1,6 @@
 cask 'karabiner-elements-halyard' do
-  version '11.5.0'
-  sha256 '73195dabd21fe516b99dee87d32f0dde44615cfb00e1055e9e310fa5ee3eea47'
+  version '11.6.0'
+  sha256 'c1b06252ecc42cdd8051eb3d606050ee47b04532629293245ffdfa01bbc2430d'
 
   url "https://pqrs.org/osx/karabiner/files/Karabiner-Elements-#{version}.dmg"
   name 'Karabiner Elements'
