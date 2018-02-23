@@ -1,9 +1,9 @@
 item do
   expected do
    url_xpath
-   url 'https://luxafor.com/download/'
+   url 'http://luxafor.com/download/'
    xpath '/html/body/main/section[1]/div[2]/div[1]/a/@href'
-   regex /^https:\/\/luxafor\.com\/uploads\/luxafor_mac_v([\d.]+)\.zip$/
+   regex /^http:\/\/luxafor\.com\/uploads\/luxafor_mac_v([\d.]+)\.zip$/
   end
 
   actual do
