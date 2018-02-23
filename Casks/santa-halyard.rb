@@ -1,6 +1,6 @@
 cask 'santa-halyard' do
-  version '0.9.22'
-  sha256 '8f97f53bce0bad2c99ab2bb1d62693565d0d67218f6708ee85f8a2f21f542e6b'
+  version '0.9.23'
+  sha256 '637af1432a743c6f09f46ef90aff8d6a9670f12e6357344ceaff9be26d4ca595'
 
   url "https://github.com/google/santa/releases/download/#{version}/santa-#{version}.dmg"
   name 'Santa'
