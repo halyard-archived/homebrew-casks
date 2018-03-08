@@ -2,7 +2,7 @@ item do
   expected do
    url_xpath
    url 'https://www.virtualbox.org/wiki/Downloads'
-   xpath '//*[@id="wikipage"]/ul[1]/li/ul/li[2]/a/@href'
+   xpath '//*[@id="wikipage"]/ul[1]/li[2]/a/@href'
    regex /^https:\/\/download\.virtualbox\.org\/virtualbox\/[\d.]+\/VirtualBox-([\d.-]+)-OSX.dmg$/
   end
 
