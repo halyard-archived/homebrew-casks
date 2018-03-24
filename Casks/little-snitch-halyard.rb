@@ -8,7 +8,8 @@ cask 'little-snitch-halyard' do
 
   auto_updates true
 
-  installer manual: 'Little Snitch Installer.app'
+  container type: :naked
+  installer manual: "LittleSnitch-#{version}.dmg/Little Snitch Installer.app"
 
   uninstall launchctl: [
                          'at.obdev.LittleSnitchUIAgent',
