@@ -1,6 +1,6 @@
 cask 'little-snitch-halyard' do
-  version '4.0.5'
-  sha256 'a954a269596c9a8e9efb3efadf843a6ae419fe218145c5b8d877e2acb0692981'
+  version '4.0.6'
+  sha256 'c8d21ad4efc2a0625574f8e6dbe5c79b59fb91468c7abae7581d9a58d24c1ff7'
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   name 'Little Snitch'
@@ -8,8 +8,7 @@ cask 'little-snitch-halyard' do
 
   auto_updates true
 
-  container type: :naked
-  installer manual: "LittleSnitch-#{version}.dmg"
+  installer manual: 'Little Snitch Installer.app'
 
   uninstall launchctl: [
                          'at.obdev.LittleSnitchUIAgent',
