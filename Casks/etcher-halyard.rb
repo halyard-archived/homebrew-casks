@@ -1,6 +1,6 @@
 cask 'etcher-halyard' do
-  version '1.3.1'
-  sha256 'c5609c7e9aaa4d8d28b45f6758ad5b9711ec1eeae9f752a6f64413bc1e97016a'
+  version '1.4.0'
+  sha256 '1b8b9a84b81feedb2de3bca30d251b25d0a3bfd8d27d7bed6d5e6da51c0197b3'
 
   url "https://github.com/resin-io/etcher/releases/download/v#{version}/Etcher-#{version}.dmg"
   name 'Etcher'
