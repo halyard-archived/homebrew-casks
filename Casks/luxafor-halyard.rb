@@ -6,5 +6,5 @@ cask 'luxafor-halyard' do
   name 'Luxafor'
   homepage 'https://luxafor.com/'
 
-  app "Luxafor-#{version}/Luxafor.app"
+  app "Luxafor.app"
 end
