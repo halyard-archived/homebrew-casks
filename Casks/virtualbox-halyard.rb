@@ -1,18 +1,12 @@
 cask 'virtualbox-halyard' do
-  version '5.2.8-121009'
+  version '5.2.8,121009'
   sha256 '97764ad37c5fafdeccecfb660ce056f625e9048890af772befe0330ed2def1d8'
 
-  url "http://download.virtualbox.org/virtualbox/#{version.sub(%r{-.*}, '')}/VirtualBox-#{version}-OSX.dmg"
+  url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
   name 'Oracle VirtualBox'
   homepage 'https://www.virtualbox.org/'
 
   pkg 'VirtualBox.pkg'
-
-  uninstall_preflight do
-    if File.exist?("#{HOMEBREW_PREFIX}/Caskroom/virtualbox-extension-pack-halyard")
-      system_command 'brew', args: ['cask', 'uninstall', 'virtualbox-extension-pack-halyard']
-    end
-  end
 
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',
@@ -21,17 +15,19 @@ cask 'virtualbox-halyard' do
                      },
             pkgutil: 'org.virtualbox.pkg.*'
 
-  zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox.sfl*',
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualboxvm.sfl*',
-                '~/Library/Saved Application State/org.virtualbox.app.VirtualBox.savedState',
-                '~/Library/Saved Application State/org.virtualbox.app.VirtualBoxVM.savedState',
-              ],
-      trash:  [
-                '/Library/Application Support/VirtualBox',
-                '~/Library/VirtualBox',
-                '~/Library/Preferences/org.virtualbox.app.VirtualBox.plist',
-                '~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist',
-              ],
-      rmdir:  '~/VirtualBox VMs'
+  zap trash: [
+               '/Library/Application Support/VirtualBox',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox.sfl*',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualboxvm.sfl*',
+               '~/Library/VirtualBox',
+               '~/Library/Preferences/org.virtualbox.app.VirtualBox.plist',
+               '~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist',
+               '~/Library/Saved Application State/org.virtualbox.app.VirtualBox.savedState',
+               '~/Library/Saved Application State/org.virtualbox.app.VirtualBoxVM.savedState',
+             ],
+      rmdir: '~/VirtualBox VMs'
+
+  caveats do
+    kext
+  end
 end
