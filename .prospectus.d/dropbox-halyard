@@ -1,0 +1,19 @@
+item do
+  expected do
+    static
+    uri = URI.parse('https://www.dropbox.com/download?plat=mac')
+    req = Net::HTTP::Get.new(uri.path)
+    https = Net::HTTP.new(uri.host, uri.port)
+    https.use_ssl = true
+    resp = https.request(req)
+    new_location = resp.header['Location']
+    new_uri = URI.parse(new_location)
+    new_version = URI::decode_www_form(new_uri.query).to_h['build_no']
+    set new_version
+  end
+
+  actual do
+    homebrew_cask
+    name 'dropbox-halyard'
+  end
+end

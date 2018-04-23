@@ -1,8 +1,8 @@
 cask 'dropbox-halyard' do
-  version :latest
-  sha256 :no_check
+  version '47.4.74'
+  sha256 '7e2002684433a1415ace980e802a8cd0469c8bdc0399f7f9ba58ab465a94106b'
 
-  url 'https://www.dropbox.com/download?plat=mac&full=1'
+  url "https://www.dropbox.com/download?plat=mac&type=full&build=#{version}"
   homepage 'https://www.dropbox.com/'
   name 'Dropbox'
 
