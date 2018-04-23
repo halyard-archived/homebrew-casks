@@ -2,7 +2,7 @@ item do
   expected do
     github_tag
     repo 'gnachman/iTerm2'
-    filter /^v([\d.]+)$/
+    filter /^v\d+\.[\d.]+$/
   end
 
   actual do
