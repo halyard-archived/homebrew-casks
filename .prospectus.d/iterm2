@@ -1,0 +1,12 @@
+item do
+  expected do
+    github_tag
+    repo 'gnachman/iTerm2'
+    filter /^v([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'iterm2-halyard'
+  end
+end
