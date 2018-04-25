@@ -1,8 +1,8 @@
 cask 'dropbox-halyard' do
-  version '47.4.74'
-  sha256 '68209f1c7d2d62590c352c2a1a98ff6828e0030dab659768b5b311fd16932b7c'
+  version '48.4.58'
+  sha256 'e28b4d399d3cd90fd1db4cf8b614841f2e9807702a8dbc4a748dab07fdd8995c'
 
-  url "https://www.dropbox.com/download?plat=mac&type=full&build=#{version}"
+  url "https://clientupdates.dropboxstatic.com/dbx-releng/client/Dropbox #{version}.dmg"
   homepage 'https://www.dropbox.com/'
   name 'Dropbox'
 
