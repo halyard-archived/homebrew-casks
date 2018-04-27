@@ -1,6 +1,6 @@
 cask 'docker-halyard' do
-  version '18.03.0-ce-mac60,23751'
-  sha256 'cd2970d062d5ffb714f22a8595660646cbd7f3130874df1217f460b40f5e5a93'
+  version '18.03.1-ce-mac64,24245'
+  sha256 '30e9f1ae053c1efcd74a60de3f29610cf7a6a1af9e46189953dd95499d4699eb'
 
   url "https://download.docker.com/mac/stable/#{version.after_comma}/Docker.dmg"
   name 'Docker Community Edition'
