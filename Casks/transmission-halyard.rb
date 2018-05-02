@@ -1,6 +1,6 @@
 cask 'transmission-halyard' do
-  version '2.93'
-  sha256 '61cd9b74cc542458fe2e41be6ac76d8b4201a94293bf681f8d75e12e64bd8d95'
+  version '2.94'
+  sha256 '2cae915ae0e37fc5983406ca7fbd53a054a7153d3bfd7a6cef117a8a28d8a78a'
 
   url "https://github.com/transmission/transmission-releases/raw/master/Transmission-#{version}.dmg"
   name 'Transmission'
