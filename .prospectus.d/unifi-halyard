@@ -1,0 +1,18 @@
+require 'open-uri'
+require 'json'
+
+item do
+  expected do
+    static
+    url = 'https://www.ubnt.com/download/?platform=unifi'
+    page = open(url, 'x-requested-with' => 'XMLHttpRequest').read
+    downloads = JSON.parse(page)['downloads']
+	mac_downloads = downloads.select { |x| x['slug'] =~ /^unifi-\d+-controller-macos$/ }
+    set mac_downloads.sort_by { |x| x['rank'] }.last['version']
+  end
+
+  actual do
+    homebrew_cask
+    name 'unifi-halyard'
+  end
+end
