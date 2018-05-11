@@ -1,6 +1,6 @@
 cask 'virtualbox-halyard' do
-  version '5.2.10,122088'
-  sha256 '7d203d1c65b58abf68e050ec2cb85a67100d7829d72752cae0148b95a04dc889'
+  version '5.2.12,122591'
+  sha256 'b757e1df9fc73ccc1e98776c0ec45f48d2950bb1f5f91e25f9d5c43fd8774b05'
 
   url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
   name 'Oracle VirtualBox'
