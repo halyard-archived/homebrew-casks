@@ -3,7 +3,7 @@ item do
     github_tag
     repo 'gnachman/iTerm2'
     regex /^v([\d.]+)$/
-    filter /^v\d+\.[\d.]+$/
+    filter /^v\d+\.\d+\.\d+$/
   end
 
   actual do
