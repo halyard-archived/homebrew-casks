@@ -1,0 +1,12 @@
+item do
+  expected do
+    github_release
+    repo 'crystalidea/macs-fan-control'
+    regex /^v([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'macs-fan-control-halyard'
+  end
+end
