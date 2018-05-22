@@ -1,0 +1,11 @@
+item do
+  expected do
+    github_release
+    repo 'halo/LinkLiar'
+  end
+
+  actual do
+    homebrew_cask
+    name 'linkliar-halyard'
+  end
+end
