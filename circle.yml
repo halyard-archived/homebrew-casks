@@ -8,7 +8,7 @@ checkout:
 dependencies:
   override:
   - rvm --default use $(cat .ruby-version)
-  - git clone https://github.com/Homebrew/brew.git ~/.brew
+  - git clone https://github.com/akerl/brew.git ~/.brew
   - mkdir -p ~/.brew/Caskroom
 test:
   override:
