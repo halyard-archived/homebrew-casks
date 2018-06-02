@@ -1,13 +1,8 @@
-machine:
-  environment:
-    HOMEBREW_DEVELOPER: 'true'
-    HOMEBREW_RUBY_PATH: /opt/circleci/.rvm/rubies/default/bin/ruby
 checkout:
   post:
   - chmod g-w Casks/*
 dependencies:
   override:
-  - rvm --default use $(cat .ruby-version)
   - git clone https://github.com/akerl/brew.git ~/.brew
   - mkdir -p ~/.brew/Caskroom
 test:
