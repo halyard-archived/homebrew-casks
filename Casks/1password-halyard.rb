@@ -1,6 +1,6 @@
 cask '1password-halyard' do
-  version '7.0.3'
-  sha256 '386f4aa7057b6f207f0b7288c7d6e83390c648d4204e571f96353733833dafa8'
+  version '7.0.4'
+  sha256 '77f625f3ad28c98342e3ab68a417b4ece7cc762179a6de9279ce714f298ef7c4'
 
   url "https://c.1password.com/dist/1P/mac#{version.major}/1Password-#{version}.zip"
   name '1Password'
