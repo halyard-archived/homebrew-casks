@@ -1,9 +1,8 @@
 item do
   expected do
    url_xpath
-   url 'https://www.virtualbox.org/wiki/Downloads'
-   xpath '//*[@id="wikipage"]/ul[1]/li[2]/a/@href'
-   regex /^https:\/\/download\.virtualbox\.org\/virtualbox\/[\d.]+\/VirtualBox-([\d.]+)-(\d+)-OSX.dmg$/, '\1,\2'
+   url 'https://download.virtualbox.org/virtualbox/LATEST.TXT'
+   xpath '/'
   end
 
   actual do
