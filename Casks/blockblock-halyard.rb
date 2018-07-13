@@ -8,13 +8,13 @@ cask 'blockblock-halyard' do
   homepage 'https://objective-see.com/products/blockblock.html'
 
   installer script: {
-                      executable: "#{staged_path}/BlockBlock_Installer.app/Contents/MacOS/BlockBlock",
+                      executable: "#{staged_path}/BlockBlock Installer.app/Contents/MacOS/BlockBlock",
                       args:       ['-install'],
                       sudo:       true,
                     }
 
   uninstall script: {
-                      executable: "#{staged_path}/BlockBlock_Installer.app/Contents/MacOS/BlockBlock",
+                      executable: "#{staged_path}/BlockBlock Installer.app/Contents/MacOS/BlockBlock",
                       args:       ['-uninstall'],
                       sudo:       true,
                     }
