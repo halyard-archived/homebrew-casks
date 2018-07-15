@@ -1,8 +1,8 @@
 cask 'virtualbox-extension-pack-halyard' do
-  version '5.2.12'
-  sha256 '4c36d129f17dcab2bb37292022f1b1adfefa5f32a3161b0d5d40784bc8acf4d0'
+  version '5.2.14,123301'
+  sha256 'd90c1b0c89de19010f7c7fe7a675ac744067baf29a9966b034e97b5b2053b37e'
 
-  url "https://download.virtualbox.org/virtualbox/#{version}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
+  url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
   homepage 'https://www.virtualbox.org/'
 
@@ -15,7 +15,7 @@ cask 'virtualbox-extension-pack-halyard' do
     system_command '/usr/local/bin/VBoxManage',
                    args:  [
                             'extpack', 'install',
-                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version}.vbox-extpack"
+                            '--replace', "#{staged_path}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
                           ],
                    input: 'y',
                    sudo:  true
@@ -31,10 +31,7 @@ cask 'virtualbox-extension-pack-halyard' do
                    sudo: true
   end
 
-  caveats <<~EOS
-    Installing this Cask means you have AGREED to the
-    VirtualBox Personal Use and Evaluation License at
-
-    https://www.virtualbox.org/wiki/VirtualBox_PUEL
-  EOS
+  caveats do
+    license 'https://www.virtualbox.org/wiki/VirtualBox_PUEL'
+  end
 end
