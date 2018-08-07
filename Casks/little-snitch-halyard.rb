@@ -6,8 +6,6 @@ cask 'little-snitch-halyard' do
   name 'Little Snitch'
   homepage 'https://www.obdev.at/products/littlesnitch/index.html'
 
-  auto_updates true
-
   container type: :naked
   installer manual: "LittleSnitch-#{version}.dmg/Little Snitch Installer.app"
 
@@ -47,6 +45,7 @@ cask 'little-snitch-halyard' do
       rmdir: '/Library/Application Support/Objective Development'
 
   caveats do
+    kext
     reboot
   end
 end
