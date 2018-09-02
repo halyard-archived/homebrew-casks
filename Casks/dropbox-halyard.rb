@@ -1,6 +1,6 @@
 cask 'dropbox-halyard' do
-  version '55.4.171'
-  sha256 '4946251b843cfdcb381e04fa5a5b3a30c22d1c0723c07b3427ad792e91e05be0'
+  version '56.4.94'
+  sha256 'd3f10151b71f1d1f28dbca8c5fac3c1e8d74f990763e59b124f9298d084c5489'
 
   url "https://clientupdates.dropboxstatic.com/dbx-releng/client/Dropbox%20#{version}.dmg"
   homepage 'https://www.dropbox.com/'
