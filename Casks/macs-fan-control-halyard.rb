@@ -1,6 +1,6 @@
 cask 'macs-fan-control-halyard' do
-  version '1.4.10'
-  sha256 'c07d71e1b3660c508f0f03f91be2fec0bf81efb2e680114478d16bb90c3039eb'
+  version '1.4.11'
+  sha256 'ad5fb8bd6e17180b90491c121681c7905e673b76399f6ba1c38c23a2c3214e7b'
 
   url 'https://www.crystalidea.com/downloads/macsfancontrol.zip'
   name 'Macs Fan Control'
