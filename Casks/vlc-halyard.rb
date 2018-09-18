@@ -5,7 +5,6 @@ cask 'vlc-halyard' do
   url "https://get.videolan.org/vlc/#{version}/macosx/vlc-#{version}.dmg"
   name 'VLC media player'
   homepage 'https://www.videolan.org/vlc/'
-  gpg "#{url}.asc", key_id: '65f7c6b4206bd057a7eb73787180713be58d1adc'
 
   auto_updates true
 

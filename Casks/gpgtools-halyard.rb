@@ -5,7 +5,6 @@ cask 'gpgtools-halyard' do
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
   name 'GPG Suite'
   homepage 'https://gpgtools.org/'
-  gpg "#{url}.sig", key_url: 'https://gpgtools.org/GPGTools-00D026C4.asc'
 
   auto_updates true
 
