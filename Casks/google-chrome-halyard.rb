@@ -6,8 +6,6 @@ cask 'google-chrome-halyard' do
   name 'Google Chrome'
   homepage 'https://www.google.com/chrome/'
 
-  auto_updates true
-
   app 'Google Chrome.app'
 
   uninstall launchctl: [

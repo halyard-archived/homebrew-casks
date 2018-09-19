@@ -6,8 +6,6 @@ cask 'spotify-halyard' do
   name 'Spotify'
   homepage 'https://www.spotify.com/'
 
-  auto_updates true
-
   app 'Spotify.app'
 
   uninstall launchctl:  'com.spotify.webhelper',
