@@ -1,8 +1,8 @@
 cask 'iterm2-halyard' do
-  version '3.2.1'
-  sha256 '7d4862976f6e5dbf29a7193dc090d6c17c549daf47a373a8a97ae306870a22a4'
+  version '3.2.2'
+  sha256 'c97702eba2b943e800fd8417b780596c35cfccef2e579a6b6a6203efea40e745'
 
-  url 'https://iterm2.com/downloads/stable/iTerm2-3_2_0.zip'
+  url "https://iterm2.com/downloads/stable/iTerm2-#{version.gsub('.', '_')}.zip"
   homepage 'https://www.iterm2.com/'
   name 'iTerm2'
 
