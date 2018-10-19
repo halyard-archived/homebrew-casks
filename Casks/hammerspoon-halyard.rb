@@ -8,7 +8,6 @@ cask 'hammerspoon-halyard' do
   homepage 'http://www.hammerspoon.org/'
 
   auto_updates true
-  accessibility_access true
 
   app 'Hammerspoon.app'
 
