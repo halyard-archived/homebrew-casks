@@ -3,7 +3,7 @@ cask 'bettertouchtool-halyard' do
   sha256 '1942b1447ad13ed18e114126fb7c593bf613dc41dd39389352a73af042736bb0'
 
   url "https://bettertouchtool.net/releases/btt#{version}.zip"
-  homepage 'http://blog.boastr.net/'
+  homepage 'https://blog.boastr.net/'
   name 'BetterTouchTool'
 
   app 'BetterTouchTool.app'

@@ -3,7 +3,7 @@ cask 'flux-halyard' do
   sha256 'a94f0adc267700c933dba0ed71b3dd6ef4891499e94bbb6be0903a3dbc0692b2'
 
   url "https://justgetflux.com/mac/Flux#{version}.zip"
-  homepage 'http://justgetflux.com'
+  homepage 'https://justgetflux.com'
   name 'Flux'
 
   app 'Flux.app'

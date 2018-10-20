@@ -5,7 +5,7 @@ cask 'hammerspoon-halyard' do
   # github.com/Hammerspoon/hammerspoon was verified as official when first introduced to the cask
   url "https://github.com/Hammerspoon/hammerspoon/releases/download/#{version}/Hammerspoon-#{version}.zip"
   name 'Hammerspoon'
-  homepage 'http://www.hammerspoon.org/'
+  homepage 'https://www.hammerspoon.org/'
 
   auto_updates true
 
