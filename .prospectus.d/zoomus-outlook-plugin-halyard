@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.zoom.us/download'
+   xpath '//*[@id="support_download"]/div[3]/div/div[3]/div[2]'
+   regex /^Version ([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'zoomus-outlook-plugin-halyard'
+  end
+end
