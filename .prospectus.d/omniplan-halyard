@@ -1,0 +1,13 @@
+item do
+  expected do
+   url_xpath
+   url 'https://www.omnigroup.com/releasenotes/omniplan/'
+   xpath '/html/body/div/article[1]/header/h2'
+   regex /^OmniPlan for Mac\s+([\d.]+)$/
+  end
+
+  actual do
+    homebrew_cask
+    name 'omniplan-halyard'
+  end
+end
