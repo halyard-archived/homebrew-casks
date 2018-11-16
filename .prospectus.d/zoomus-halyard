@@ -4,6 +4,7 @@ item do
    url 'https://www.zoom.us/download'
    xpath '//*[@id="support_download"]/div[2]/div/div[3]/div[2]'
    regex /^Version ([\d.]+)$/
+   headers 'User-Agent' => 'Macintosh'
   end
 
   actual do
