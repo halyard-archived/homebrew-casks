@@ -1,4 +1,4 @@
-cask 'omniplan' do
+cask 'omniplan-halyard' do
   version '3.10.2'
   sha256 'e045659e786edba3fa449dbbb33e294f3d94f29cc17845421f3c12ad77431ef3'
 
