@@ -1,6 +1,6 @@
 cask 'zoomus-halyard' do
-  version '4.1.34801.1116'
-  sha256 '9938a9f0d26cdd2b1e8e251b70dc0488050bbb2b087bc0af3ca18a7800e48f45'
+  version '4.1.35374.1217'
+  sha256 'fa2a3275c915d9514d0fad5aafa050af2b6dcdfc9ae46ff0c8ed1b12e036173a'
 
   url "https://www.zoom.us/client/#{version}/zoomusInstaller.pkg"
   name 'Zoom.us'
