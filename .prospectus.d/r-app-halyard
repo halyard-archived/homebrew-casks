@@ -1,9 +1,9 @@
 item do
   expected do
     url_xpath
-    url 'https://cloud.r-project.org/banner.shtml'
-    xpath '/html/body/div/table/tr[2]/td/ul/li[1]/a[1]'
-    regex /^R-([\d.]+)\.tar\.gz$/
+    url 'https://cloud.r-project.org/bin/macosx/'
+    xpath '/html/body/table[1]/tr[2]/td[1]/a'
+    regex /^R-([\d.]+)\.pkg$/
   end
 
   actual do
