@@ -1,6 +1,6 @@
 cask 'r-app-halyard' do
-  version '3.5.1'
-  sha256 '5f781220ff2f9374a4db114435fa2d22cfebc353ed8d5246a1f1e162eab75a01'
+  version '3.5.2'
+  sha256 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 
   url "https://cloud.r-project.org/bin/macosx/R-#{version}.pkg"
   appcast 'https://www.r-project.org/'
