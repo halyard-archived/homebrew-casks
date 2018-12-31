@@ -2,7 +2,7 @@ item do
   expected do
    url_xpath
    url 'https://www.omnigroup.com/releasenotes/omniplan/'
-   xpath '/html/body/div/article[2]/header/h2'
+   xpath '/html/body/div/article[1]/header/h2'
    regex /^OmniPlan for Mac\s+([\d.]+)$/
   end
 
