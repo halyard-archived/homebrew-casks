@@ -1,6 +1,6 @@
 cask 'zoomus-outlook-plugin-halyard' do
-  version '4.4.31020.1116'
-  sha256 'a3d9707a33efaf226387962d9c762baaa8bb47c254a14947fb9c4eb306436b26'
+  version '4.4.43561.1222'
+  sha256 '416f0baf5af51c2f5c5b649bc89fcacb3ff590de5ddd3b9921ddae03070bbf04'
 
   url "https://zoom.us/client/#{version}/ZoomMacOutlookPlugin.pkg"
   name 'Zoom.us Outlook Plugin'
