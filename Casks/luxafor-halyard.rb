@@ -1,6 +1,6 @@
 cask 'luxafor-halyard' do
-  version '1.2.28'
-  sha256 'a56c05f415b076e4eebca9f12769bc28dd2a15287fdb95409906e2ca3981e87b'
+  version '1.2.30'
+  sha256 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 
   url "https://luxafor.com/uploads/luxafor_mac_v#{version}.zip"
   name 'Luxafor'
