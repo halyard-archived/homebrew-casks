@@ -1,6 +1,6 @@
 cask 'docker-halyard' do
-  version '2.0.0.0-mac81,29211'
-  sha256 '5343fa169b9f7bc6f41f91e5797d148a21d2c0fc1d5c2da80d7d93ed6b3bd1ff'
+  version '2.0.0.2,30215'
+  sha256 'a06307d8da9c3778b183786cb87037ed3b7226d36ebc978fd40aa90851c0a04e'
 
   url "https://download.docker.com/mac/stable/#{version.after_comma}/Docker.dmg"
   name 'Docker Community Edition'
@@ -11,25 +11,38 @@ cask 'docker-halyard' do
 
   app 'Docker.app'
 
-  uninstall delete:    '/Library/PrivilegedHelperTools/com.docker.vmnetd',
+  uninstall delete:    [
+                         '/Library/PrivilegedHelperTools/com.docker.vmnetd',
+                         '/private/var/tmp/com.docker.vmnetd.socket',
+                         '/usr/local/bin/docker',
+                         '/usr/local/bin/docker-compose',
+                         '/usr/local/bin/docker-credential-osxkeychain',
+                         '/usr/local/bin/docker-machine',
+                         '/usr/local/bin/hyperkit',
+                         '/usr/local/bin/notary',
+                         '/usr/local/bin/vpnkit',
+                       ],
             launchctl: [
                          'com.docker.helper',
                          'com.docker.vmnetd',
                        ],
             quit:      'com.docker.docker'
 
-  zap delete: [
-                '~/Library/Application Scripts/com.docker.helper',
-                '~/Library/Caches/KSCrashReports/Docker',
-                '~/Library/Caches/com.docker.docker',
-                '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.docker.docker',
-                '~/Library/Containers/com.docker.docker',
-                '~/Library/Containers/com.docker.helper',
-                '~/Library/Group Containers/group.com.docker',
-              ],
-      trash:  '~/Library/Preferences/com.docker.docker.plist',
-      rmdir:  [
-                '~/Library/Caches/KSCrashReports',
-                '~/Library/Caches/com.plausiblelabs.crashreporter.data',
-              ]
+  zap trash: [
+               '/usr/local/bin/docker-compose.backup',
+               '/usr/local/bin/docker-machine.backup',
+               '/usr/local/bin/docker.backup',
+               '~/Library/Application Scripts/com.docker.helper',
+               '~/Library/Caches/KSCrashReports/Docker',
+               '~/Library/Caches/com.docker.docker',
+               '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.docker.docker',
+               '~/Library/Containers/com.docker.docker',
+               '~/Library/Containers/com.docker.helper',
+               '~/Library/Group Containers/group.com.docker',
+               '~/Library/Preferences/com.docker.docker.plist',
+             ],
+      rmdir: [
+               '~/Library/Caches/KSCrashReports',
+               '~/Library/Caches/com.plausiblelabs.crashreporter.data',
+             ]
 end
