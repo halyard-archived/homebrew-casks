@@ -1,6 +1,6 @@
 cask 'omniplan-halyard' do
-  version '3.10.4'
-  sha256 'a30728e72ae970dbf37b2ef9942a6b54267aa3456288dcc1815f20b44667e9e5'
+  version '3.11'
+  sha256 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 
   url "https://downloads.omnigroup.com/software/MacOSX/10.12/OmniPlan-#{version}.dmg"
   name 'OmniPlan'
