@@ -1,8 +1,8 @@
 cask 'disk-inventory-x-halyard' do
   version '1.2'
-  sha256 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+  sha256 '7b5a181199a0727cb059460b54fa66c7975853aa59db507cdcc3f6c9f85f5660'
 
-  url "http://www.derlien.com/diskinventoryx/downloads/dev/DIX#{version}Universal.dmg"
+  url "http://www.derlien.com/diskinventoryx/downloads/Disk%20Inventory%20X%20#{version}.dmg"
   name 'Disk Inventory X'
   homepage 'http://www.derlien.com/'
 
