@@ -1,8 +1,8 @@
 cask 'luxafor-halyard' do
   version '1.2.31'
-  sha256 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+  sha256 '4a2e0dc6b40f211d543addf60ece6868aa1e57be899bcaea8118a284ba459569'
 
-  url "https://luxafor.com/wp-content/uploads/2019/01/luxafor_mac_v#{version}.zip"
+  url "http://luxafor.com/uploads/luxafor_mac_v#{version}.zip"
   name 'Luxafor'
   homepage 'https://luxafor.com/'
 
