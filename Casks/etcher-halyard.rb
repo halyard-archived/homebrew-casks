@@ -1,6 +1,6 @@
 cask 'etcher-halyard' do
-  version '1.5.18'
-  sha256 'c6bb758e36048ab5d598b461a9aa6a0279ad02759024cedfa0e2df4100c2c231'
+  version '1.5.30'
+  sha256 'e2aa9670ff0b04049522f9b45703f2578e3e7227d64949009766479390a14357'
 
   url "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg"
   name 'Etcher'
