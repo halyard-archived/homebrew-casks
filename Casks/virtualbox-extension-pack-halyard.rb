@@ -1,6 +1,6 @@
 cask 'virtualbox-extension-pack-halyard' do
-  version '6.0.4,128413'
-  sha256 '8887d5dd9dd26bd376926b38857715e28f2d678b6d3a034144ddc3fde4a387d9'
+  version '6.0.6,130049'
+  sha256 '794f023a186bd217c29c3d30bd1434b6e9de3b242c7bf740d06d10f2d3d981c6'
 
   url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/Oracle_VM_VirtualBox_Extension_Pack-#{version.before_comma}-#{version.after_comma}.vbox-extpack"
   name 'Oracle VirtualBox Extension Pack'
