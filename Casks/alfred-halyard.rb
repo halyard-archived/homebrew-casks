@@ -1,4 +1,4 @@
-cask 'alfred' do
+cask 'alfred-halyard' do
   version '4.0.2_1088'
   sha256 '7f83c73dac84a02308fd84acf3b98824a19fb506db2c97982d080e33f1bf9896'
 
